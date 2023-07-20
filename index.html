@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Logo q aparece na guia -->
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <title>Portfolio</title>
+
+    <!-- Build Tailwind CSS -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js" defer></script>
+
+    <!-- Font-family Arsenal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&display=swap" rel="stylesheet">
+
+    <!-- Font-family Bonheur Royale -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="max-w-6xl mx-auto">
+        <!-- Header and NavBar -->
+        <header class="flex justify-evenly sm:justify-evenly smmd:justify-evenly md:justify-evenly xl:justify-between 2xl:justify-between items-center my-10 max-w-6xl">
+
+            <!-- Logotipo -->
+            <div>
+                <a href="#" class="logo-text">Igor A<span class="font-bold">.</span></a>
+            </div>
+
+            <!-- NavBar -->
+            <nav class="flex items-center gap-12">
+                <div class="duration-300 hover:scale-105 hidden sm:block md:block">
+                    <a href="#" class="navbar-text">Início</a>
+                </div>
+
+                <div class="duration-300 hover:scale-105 hidden sm:block md:block">
+                    <a href="#" class="navbar-text">Formações</a>
+                </div>
+
+                <div class="duration-300 hover:scale-105 hidden sm:block md:block">
+                    <a href="#" class="navbar-text">Projetos</a>
+                </div>
+
+                <div class="duration-300 hover:scale-105 hidden sm:block md:block">
+                    <a href="#" class="navbar-text">Contato</a>
+                </div>
+            </nav>
+
+            <!-- Header botão "Entrar em contato" -->
+            <div class="hidden smmd:block md:block lg:block xl:block">
+                <div class="flex items-center">
+                    <button class="header-button"><a href="#">Entrar em contato</a></button>
+                </div>
+            </div>
+
+            <!-- Menu mobile -->
+            <div id="menu" class="block sm:hidden smmd:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
+                <div class="flex justify-center items-center gap-1 cursor-pointer">
+                    <div class="flex flex-col gap-[3px]"><!-- flex -->
+                        <div class="line-menu"></div>
+                        <div class="line-menu"></div>
+                        <div class="line-menu"></div>
+                    </div>
+                    <p class="text-lg">Menu</p>
+                </div>
+            </div>
+
+            <!-- Lista suspensa do Menu Mobile -->
+            <div id="list-menu" class="w-1/2 h-full right-0 top-[81px] fixed hidden">
+                <div class="flex flex-col justify-start items-center bg-black rounded-xl h-full py-7 animate-slide-menu">
+                    <a href="#" class="menu-text">Início</a>
+                    <a href="#" class="menu-text">Formações</a>
+                    <a href="#" class="menu-text">Projetos</a>
+                    <a href="#" class="menu-text">Contato</a>
+                    <button class="menu-button"><a href="#">Entrar em contato</a></button>
+                </div>
+            </div>
+
+        </header>
+        <main></main>
+    </div>
+    <!-- Header and NavBar -->
+
+
+    <!-- <section class="flex justify-center items-center py-16 w-full">
+        <div class="flex flex-col justify-center gap-y-5">
+            <h1 class="font-serif text-4xl">Hi, I'm the</h1>
+            <span class="font-royale text-8xl">Igor Augusto</span>
+            <button class="button"><a href="#">ENTRE EM CONTATO</a></button>
+        </div>
+    </section> -->
+    <!-- <div class="flex justify-center items-center">
+            <img src="src/img/astronaut.svg" class="scale-x-[-1] w-1/2 max-h-max h-auto" alt="Imagem">
+        </div> -->
+
+    <!-- <div class="flex place-content-center animate-bounce">
+        <img src="src/img/down-button.svg" alt="" class="w-10 h-10">
+    </div> -->
+
+    <!-- About -->
+    <!-- <section class="bg-[#212121] py-16">
+        <div class="">
+            <h1>opa</h1>
+        </div>
+    </section> -->
+    <!-- About -->
+</body>
+
+</html>

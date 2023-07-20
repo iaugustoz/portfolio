@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+    /* Logo do header */
+    .logo-text {
+        @apply font-royale text-5xl md:text-7xl xl:text-7xl font-light;
+    }
+
+    /* Texto da NavBar */
+    .navbar-text {
+        @apply font-arsenal font-bold text-xl smmd:text-xl md:text-2xl xl:text-2xl 2xl:text-[26px] hover:underline;
+    }
+
+    /* Design do botão q está no header */
+    .header-button {
+        @apply bg-white border-2 border-black rounded-[10px] text-black xl:text-xl 2xl:text-xl font-bold font-arsenal px-4 py-2 hover:bg-black hover:text-white;
+    }
+
+    /* Cria as linhas que formam o menu  */
+    .line-menu {
+        @apply bg-black w-5 h-[4px] rounded-lg;
+    }
+
+    /* Formatação do texto q está no menu */
+    .menu-text {
+        @apply text-white font-arsenal font-bold text-xl duration-300 hover:scale-105 px-10 py-2;
+    }
+
+    /* Formatação do botão do menu  */
+    .menu-button {
+        @apply font-arsenal bg-black text-white border-2 border-white rounded-lg my-4 p-2 hover:bg-white hover:text-black hover:font-semibold hover:scale-105 hover:duration-150;
+    }
+
+    /* Formatação do botão da página inicial e seção contato */
+    .button {
+        @apply bg-black text-white p-4 rounded-lg duration-150 active:scale-105;
+    }
+}
