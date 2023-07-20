@@ -1,33 +1,32 @@
 # Portfolio
 <div align="center">
-<img src="./img/site.png" width="2000px" alt="Imagem do site" title="Imagem do site"/>
+<img src="src/img/" width="2000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
 ## Descrição
-
-Relógio digital inovador e elegante que oferece uma forma contemporânea de exibir a hora. Este software foi desenvolvido com foco na simplicidade, usabilidade e design estético.
+Em elaboração...
 
 ## Status do projeto
-Projeto concluído.
+Projeto em andamento.
 
 ## Pré-requisitos
 
-- HTML5;
-- CSS3;
-- JavaScript (ECMAScript 2022).
+- HTML;
+- Tailwind CSS;
+- JavaScript.
 
 ## Instalando
 
 1. Clone o repositório para o seu ambiente local:
 
 ```
-$ git clone https://github.com/igoraugustobrz/RelogioDigital
+$ git clone https://github.com/igoraugustobrz/Portfolio
 ```
 
 2. Navegue até o diretório do projeto.
 
 ```
-$ cd RelogioDigital
+$ cd Portfolio
 ```
 
 ## Contribuindo
