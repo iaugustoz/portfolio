@@ -18,15 +18,6 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px'
       },
-      keyframes: {
-        slide: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
-        },
-      },
-      animation: {
-        'slide-menu': 'slide 0.8s ease-out',
-  },
   plugins: [],
 }
 }

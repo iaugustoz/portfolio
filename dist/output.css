@@ -804,20 +804,6 @@ video {
   animation: bounce 1s infinite;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-.animate-slide-menu {
-  animation: slide 0.8s ease-out;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -915,6 +901,12 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.transition-\[width\] {
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300 {
