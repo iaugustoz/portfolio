@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'arsenal': ['Arsenal', 'Arial', 'Times New Roman'],
-        'royale': ['Bonheur Royale', 'Arial', 'Times New Roman'],
+        'fira-sans': ['Fira Sans', 'Arial', 'Times New Roman'],
       },
       screens: {
         'sm': '640px',

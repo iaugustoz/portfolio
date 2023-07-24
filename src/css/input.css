@@ -6,17 +6,22 @@
     
     /* Logo do header */
     .logo-text {
-        @apply font-royale text-5xl md:text-7xl xl:text-7xl font-light;
+        @apply font-fira-sans text-3xl sm:text-[35px] smmd:text-3xl md:text-5xl xl:text-5xl 2xl:text-5xl font-light animate-pulse;
+    }
+
+    /* Div da Navbar */
+    .navbar {
+        @apply duration-300 hover:font-bold hover:scale-[1.035] hidden sm:block md:block;
     }
 
     /* Texto da NavBar */
     .navbar-text {
-        @apply font-arsenal font-bold text-xl smmd:text-xl md:text-2xl xl:text-2xl 2xl:text-[26px] hover:underline;
+        @apply font-fira-sans text-xl  smmd:text-[22px] md:text-2xl xl:text-2xl 2xl:text-2xl hover:underline;
     }
 
     /* Design do botão q está no header */
     .header-button {
-        @apply bg-white border-2 border-black rounded-[10px] text-black xl:text-xl 2xl:text-xl font-bold font-arsenal px-4 py-2 hover:bg-black hover:text-white;
+        @apply bg-white border-2 border-black rounded-[10px] text-black xl:text-xl 2xl:text-xl font-bold font-fira-sans px-5 py-1 hover:bg-black hover:text-white transition-all hover:scale-105;
     }
 
     /* Cria as linhas que formam o menu  */
@@ -24,18 +29,27 @@
         @apply bg-black w-5 h-[4px] rounded-lg;
     }
 
-    /* Formatação do texto q está no menu */
+    /* Texto do menu */
     .menu-text {
-        @apply text-white font-arsenal font-bold text-xl duration-300 hover:scale-105 px-10 py-2;
+        @apply text-white font-fira-sans text-xl duration-300 hover:scale-105 px-10 py-2;
     }
 
-    /* Formatação do botão do menu  */
+    /* Botão do menu  */
     .menu-button {
-        @apply font-arsenal bg-black text-white border-2 border-white rounded-lg my-4 p-2 hover:bg-white hover:text-black hover:font-semibold hover:scale-105 hover:duration-150;
+        @apply font-fira-sans bg-black text-white border-2 border-white rounded-lg my-4 p-2 hover:bg-white hover:text-black hover:font-semibold transition-all hover:scale-105 hover:duration-150;
+    }
+
+    .home-text {
+        @apply font-fira-sans font-bold text-[44px] sm:text-[60px] smmd:text-[70px] md:text-7xl lg:text-[75px] xl:text-[75px] 2xl:text-[75px] text-center sm:text-left smmd:text-left md:text-left lg:text-left 2xl:text-left leading-[1.125] w-full mb-[50px];
     }
 
     /* Formatação do botão da página inicial e seção contato */
     .button {
-        @apply bg-black text-white p-4 rounded-lg duration-150 active:scale-105;
+        @apply  bg-black text-lg text-white p-4 w-full sm:w-[600px] smmd:w-[600px] md:w-[600px] lg:w-[600px] 2xl:w-[600px] rounded-lg duration-150 active:scale-105;
+    }
+
+    /* Seta (img) */
+    .down-arrow {
+        @apply hidden sm:block smmd:block md:block lg:block 2xl:block w-10 h-10 animate-bounce;
     }
 }
