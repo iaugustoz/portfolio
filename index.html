@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth snap-mandatory snap-y">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Logo q aparece na guia -->
+    <!-- Logo que aparece na guia -->
     <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
-    <title>Portfolio</title>
+    <title>Portfólio de Igor Augusto</title>
 
-    <!-- Build Tailwind CSS -->
+    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="dist/output.css">
 
-    <!-- JavaScript -->
+    <!-- JavaScript externo -->
     <script src="src/js/main.js" defer></script>
 
     <!-- Font-family Fira Sans -->
@@ -22,40 +22,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="max-w-6xl mx-auto">
+<body class="snap-mandatory snap-y">
+    <div class="md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl mx-auto">
 
-        <!-- Header and NavBar -->
-        <header class="flex justify-evenly sm:justify-evenly smmd:justify-evenly md:justify-evenly xl:justify-between 2xl:justify-between items-center my-10 max-w-6xl">
+        <!-- Cabeçalho e Barra de Navegação -->
+        <header class="flex-layout-header">
 
             <!-- Logotipo -->
             <div>
-                <a href="#inicio" class="logo-text">Igor Augusto</span></a>
+                <a href="#inicio" class="logo-text">Igor Augusto</a>
             </div>
 
-            <!-- NavBar -->
+            <!-- Barra de Navegação -->
             <nav class="flex items-center gap-10">
-                <div class="navbar">
-                    <a href="#inicio" class="navbar-text">Início</a>
-                </div>
-
                 <div class="navbar">
                     <a href="#" class="navbar-text">Formação</a>
                 </div>
-
                 <div class="navbar">
                     <a href="#" class="navbar-text">Experiência</a>
                 </div>
-
                 <div class="navbar">
                     <a href="#" class="navbar-text">Contato</a>
                 </div>
             </nav>
 
-            <!-- Menu mobile -->
-            <div id="menu" class="block sm:hidden smmd:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
+            <!-- Menu Mobile -->
+            <div id="menu" class="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
                 <div class="flex justify-center items-center gap-1 cursor-pointer">
-                    <div class="flex flex-col gap-[3px]"><!-- flex -->
+                    <div class="flex flex-col gap-[3px]">
                         <div class="line-menu"></div>
                         <div class="line-menu"></div>
                         <div class="line-menu"></div>
@@ -65,7 +59,7 @@
             </div>
 
             <!-- Lista suspensa do Menu Mobile -->
-            <div id="list-menu" class="w-1/2 h-full right-0 top-[81px] fixed hidden">
+            <div id="list-menu" class="w-1/2 h-full right-0 top-[110px] fixed hidden">
                 <div id="animation" class="flex flex-col justify-start items-center bg-black rounded-xl h-full py-7">
                     <a href="#inicio" class="menu-text">Início</a>
                     <a href="#" class="menu-text">Formação</a>
@@ -73,37 +67,29 @@
                     <button class="menu-button"><a href="#">Entrar em contato</a></button>
                 </div>
             </div>
-            <!-- Header and NavBar -->
-
         </header>
-        <main>
 
-            <!-- Section start -->
-            <section class="py-16">
+        <!-- Conteúdo da seção Home -->
+        <main class="home-page">
+            <img src="src/img/astronauta.svg" alt="Astronauta" class="hidden md:hidden lg:block 2xl:block">
 
-                <div class="flex justify-center xl:justify-between 2xl:justify-between items-center">
-
-                    <div class="hidden xl:block 2xl:block">
-                        <div class="flex justify-start">
-                            <img src="src/img/astronauta.svg" alt="Astronauta" title="Astronauta" class="w-[60%] h-1/2">
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col justify-start items-end">
-                        <p id="inicio" class="home-text">Desenvolvedor<br>Front-End &<br>UX/UI Designer</p>
-                        <button class="button"><a href="#">Entrar em contato</a></button>
-                    </div>
-
+            <div class="flex flex-col items-end">
+                <p id="inicio" class="home-page-title">Desenvolvedor<br>Front-End &<br>UX/UI Designer</p>
+                <p class="home-page-subtitle">Apaixonado por tecnologia</p>
+                <div class="self-center w-[250px] sm:w-[300px] xl:w-[530px] 2xl:w-[530px] mt-5">
+                    <button class="home-page-button"><a href="#">Entrar em contato</a></button>
                 </div>
-
-            </section>
-            <!-- Section start -->
-
-            <div class="flex justify-center items-center py-10">
-                <a href="#"><img src="src/img/down-button.svg" alt="Seta" class="down-arrow"></a>
             </div>
+    </div>
+    </main>
 
-        </main>
+    <!-- Ícone de seta para baixo -->
+    <div class="flex justify-center items-center">
+        <img src="src/img/down-button.svg" alt="Seta para baixo" class="down-arrow">
+    </div>
+
+    <section></section>
+
     </div>
 </body>
 
