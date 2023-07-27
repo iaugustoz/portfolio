@@ -34,8 +34,9 @@ menu.addEventListener('click', function() {
   menuVisible = !menuVisible; // Inverte o estado do menu para a próxima interação
 });
 
-const imgScrollDown = document.getElementById('scroll-down');
+const arrow = document.getElementById('arrow');
+const destinationElement = document.getElementById('formacao');
 
-imgScrollDown.addEventListener('click', function() {
-    window.scrollTo(0,0);
+arrow.addEventListener('click', function() {
+    destinationElement.scrollIntoView({behavior: 'smooth'});
 });

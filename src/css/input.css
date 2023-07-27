@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Container que delimita a área do conteúdo (Header, sections, footers, etc) */
+.container-portfolio {
+    @apply md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl mx-auto;
+}
+
 /* Estilos para a camada 'components' */
 .flex-layout-header {
     @apply flex justify-evenly sm:justify-evenly md:justify-evenly lg:justify-between xl:justify-between 2xl:justify-between items-center my-20 max-w-6xl;

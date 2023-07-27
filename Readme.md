@@ -11,9 +11,9 @@ Projeto em andamento.
 
 ## Pré-requisitos
 
-- HTML;
-- Tailwind CSS;
-- JavaScript.
+- HTML5;
+- Tailwind CSS (v3.3.3 ou superior);
+- JavaScript (ECMAScript 2022).
 
 ## Instalando
 

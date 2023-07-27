@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth snap-mandatory snap-y">
+<html lang="pt-br" class="scroll-smooth snap-y snap-proximity">
 
 <head>
     <meta charset="UTF-8">
@@ -22,8 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body class="snap-mandatory snap-y">
-    <div class="md:max-w-3xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-6xl mx-auto">
+<body class="snap-y snap-proximity">
+    <div class="container-portfolio">
 
         <!-- Cabeçalho e Barra de Navegação -->
         <header class="flex-layout-header">
@@ -80,17 +80,20 @@
                     <button class="home-page-button"><a href="#">Entrar em contato</a></button>
                 </div>
             </div>
-    </div>
-    </main>
+        </main>
 
-    <!-- Ícone de seta para baixo -->
-    <div class="flex justify-center items-center">
-        <img src="src/img/down-button.svg" alt="Seta para baixo" class="down-arrow">
+        <!-- Ícone de seta para baixo -->
+        <div class="flex justify-center items-center">
+            <img src="src/img/down-button.svg" alt="Seta para baixo" class="down-arrow" id="arrow">
+        </div>
+
+        <section id="formacao" class="my-20"><!--  snap-start -->
+            <h1 class="text-4xl font-bold">Formação</h1><br>
+        </section>
     </div>
 
-    <section></section>
 
-    </div>
+
 </body>
 
 </html>

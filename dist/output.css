@@ -546,9 +546,9 @@ video {
   top: 110px;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mt-5 {
@@ -587,8 +587,12 @@ video {
   scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
 
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
+.snap-proximity {
+  --tw-scroll-snap-strictness: proximity;
+}
+
+.snap-start {
+  scroll-snap-align: start;
 }
 
 .flex-col {
@@ -645,9 +649,49 @@ video {
   padding-bottom: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Container que delimita a área do conteúdo (Header, sections, footers, etc) */
+
+.container-portfolio {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container-portfolio {
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-portfolio {
+    max-width: 56rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-portfolio {
+    max-width: 72rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-portfolio {
+    max-width: 72rem;
+  }
 }
 
 /* Estilos para a camada 'components' */
@@ -1070,10 +1114,6 @@ video {
   .md\:hidden {
     display: none;
   }
-
-  .md\:max-w-3xl {
-    max-width: 48rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1084,10 +1124,6 @@ video {
   .lg\:hidden {
     display: none;
   }
-
-  .lg\:max-w-4xl {
-    max-width: 56rem;
-  }
 }
 
 @media (min-width: 1280px) {
@@ -1097,10 +1133,6 @@ video {
 
   .xl\:w-\[530px\] {
     width: 530px;
-  }
-
-  .xl\:max-w-6xl {
-    max-width: 72rem;
   }
 }
 
@@ -1115,9 +1147,5 @@ video {
 
   .\32xl\:w-\[530px\] {
     width: 530px;
-  }
-
-  .\32xl\:max-w-6xl {
-    max-width: 72rem;
   }
 }
