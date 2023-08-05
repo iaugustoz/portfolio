@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth snap-y snap-proximity">
+<html lang="pt-br" class="scroll-smooth snap-y snap-mandatory">
 
 <head>
     <meta charset="UTF-8">
@@ -12,21 +12,22 @@
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="dist/output.css">
-
-    <!-- JavaScript externo -->
-    <script src="src/js/main.js" defer></script>
+    <link rel="stylesheet" href="src/css/scroll.css">
 
     <!-- Font-family Fira Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="snap-y snap-proximity">
+<body class="snap-y snap-mandatory">
     <div class="container-portfolio">
 
         <!-- Cabeçalho e Barra de Navegação -->
-        <header class="flex-layout-header">
+        <header class="flex-layout-header snap-center">
 
             <!-- Logotipo -->
             <div>
@@ -36,7 +37,7 @@
             <!-- Barra de Navegação -->
             <nav class="flex items-center gap-10">
                 <div class="navbar">
-                    <a href="#" class="navbar-text">Formação</a>
+                    <a href="#formacoes" class="navbar-text">Formações</a>
                 </div>
                 <div class="navbar">
                     <a href="#" class="navbar-text">Experiência</a>
@@ -47,7 +48,7 @@
             </nav>
 
             <!-- Menu Mobile -->
-            <div id="menu" class="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">
+            <div id="menu" class="block sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden z-10">
                 <div class="flex justify-center items-center gap-1 cursor-pointer">
                     <div class="flex flex-col gap-[3px]">
                         <div class="line-menu"></div>
@@ -59,7 +60,7 @@
             </div>
 
             <!-- Lista suspensa do Menu Mobile -->
-            <div id="list-menu" class="w-1/2 h-full right-0 top-[110px] fixed hidden">
+            <div id="list-menu" class="w-1/2 h-full right-0 top-[110px] fixed hidden z-10">
                 <div id="animation" class="flex flex-col justify-start items-center bg-black rounded-xl h-full py-7">
                     <a href="#inicio" class="menu-text">Início</a>
                     <a href="#" class="menu-text">Formação</a>
@@ -84,16 +85,80 @@
 
         <!-- Ícone de seta para baixo -->
         <div class="flex justify-center items-center">
-            <img src="src/img/down-button.svg" alt="Seta para baixo" class="down-arrow" id="arrow">
+            <i class="fa-solid fa-circle-chevron-down text-black down-arrow" id="arrow"></i>
         </div>
 
-        <section id="formacao" class="my-20"><!--  snap-start -->
-            <h1 class="text-4xl font-bold">Formação</h1><br>
+        <section id="formacao" class="snap-center my-20">
+            <h1 class="font-fira-sans text-center font-bold xl:text-4xl 2xl:text-4xl" id="formacoes">Formações</h1>
+            <h2 class="font-fira-sans text-center font-semibold py-[0.65rem] xl:text-lg 2xl:text-lg">Minhas formações e certificações mais importantes</h2>
+            <div class="container-formations">
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-graduation-cap text-white text-7xl"></i>
+                    </figure>
+                    <h3 class="card-title">Bacharelado em Ciência da Computação</h3>
+                    <hr class="text-white">
+                    <ul class="text-[16px]">
+                        <li class="text-gray-100"><strong class=" text-white">Carga horária: </strong>3840hs</li>
+                        <li class="text-gray-100"><strong class="text-white">Instituição: </strong>Universidade Paulista</li>
+                        <li class="text-gray-100"><strong class=" text-white">Prev. de formação: </strong>12/2025</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-code text-white text-7xl"></i>
+                    </figure>
+                    <h3 class="card-title">Meta Front-End Developer</h3>
+                    <hr class="text-white">
+                    <ul class="text-[16px]">
+                        <li class="text-gray-100"><strong class="text-white">Carga horária: </strong>176hs</li>
+                        <li class="text-gray-100"><strong class="text-white">Empresa: </strong>Meta</li>
+                        <li class="text-gray-100"><strong class="text-white">Período: </strong>08/23 - Dias atuais</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-solid fa-database text-white text-7xl"></i>
+                    </figure>
+                    <h3 class="card-title">Programador Web</h3>
+                    <hr class="text-white">
+                    <ul class="text-[16px]">
+                        <li class="text-gray-100"><strong class="text-white">Carga horária: </strong>200hs</li>
+                        <li class="text-gray-100"><strong class="text-white">Instituição: </strong>IFRS</li>
+                        <li class="text-gray-100"><strong class="text-white">Emissão: </strong>07/22</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-brands fa-react text-white text-7xl"></i>
+                    </figure>
+                    <h3 class="card-title">React.js</h3>
+                    <hr class="text-white">
+                    <ul class="text-[16px]">
+                        <li class="text-gray-100"><strong class="text-white">Carga horária: </strong>11hs</li>
+                        <li class="text-gray-100"><strong class="text-white">Instituição: </strong>Udemy</li>
+                        <li class="text-gray-100"><strong class="text-white">Emissão: </strong>08/23</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <figure>
+                        <i class="fa-brands fa-docker text-white text-7xl"></i>
+                    </figure>
+                    <h3 class="card-title">Docker para Desenvolvedores</h3>
+                    <hr class="text-white">
+                    <ul class="text-[16px]">
+                        <li class="text-gray-100"><strong class="text-white">Carga horária: </strong>38hs</li>
+                        <li class="text-gray-100"><strong class="text-white">Instituição: </strong>Udemy</li>
+                        <li class="text-gray-100"><strong class="text-white">Emissão: </strong>08/23 - Dias atuais</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
     </div>
 
-
-
+    <!-- JavaScript -->
+    <script src=" src/js/main.js" defer></script>
 </body>
 
 </html>
