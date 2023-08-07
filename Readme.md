@@ -1,6 +1,6 @@
 # Portfolio
 <div align="center">
-<img src="src/img/" width="2000px" alt="Imagem do site" title="Imagem do site"/>
+<img src="src/img/site.png" width="2000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
 ## Descrição
