@@ -84,4 +84,16 @@
     .card-title {
         @apply font-fira-sans md:text-lg text-lg text-white font-bold rounded-full my-[10px];
     }
+
+    .container-projects {
+        @apply flex justify-around items-center flex-wrap my-10 w-full;
+    }
+
+    .card-projects {
+       @apply rounded-lg overflow-hidden  w-[400px] pb-10;
+    }
+
+    .card-project-text {
+        @apply relative text-center p-4 transition-all duration-200 max-w-[400px] -mt-[200px] invisible;
+    }
 }

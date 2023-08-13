@@ -1116,6 +1116,35 @@ video {
   }
 }
 
+.container-projects {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-projects {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.card-project-text {
+  visibility: hidden;
+  position: relative;
+  margin-top: -200px;
+  max-width: 400px;
+  padding: 1rem;
+  text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1165,6 +1194,20 @@ video {
   width: 250px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1201,6 +1244,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-\[3px\] {
   gap: 3px;
 }
@@ -1232,12 +1279,21 @@ video {
   padding-bottom: 0.65rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-fira-sans {
   font-family: Fira Sans, Arial, Times New Roman;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1256,6 +1312,11 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 

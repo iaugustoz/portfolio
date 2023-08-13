@@ -38,7 +38,7 @@ menu.addEventListener('click', function() {
 
 // Lógica para rolar para uma seção específica na página quando o botão de seta é clicado
 const arrow = document.getElementById('arrow');
-const destinationElement = document.getElementById('formacao');
+const destinationElement = document.getElementById('formacoes');
 
 arrow.addEventListener('click', function() {
   destinationElement.scrollIntoView({behavior: 'smooth'});
