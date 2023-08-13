@@ -34,3 +34,13 @@ html {
     transition: all 200ms ease;
     border-radius: 12px;
 }
+
+.card-projects:nth-child(2):hover .card-project-text {
+    visibility: visible;
+}
+
+.card-projects:nth-child(2):hover img {
+    filter: blur(8px);
+    transition: all 200ms ease;
+    border-radius: 12px;
+}
