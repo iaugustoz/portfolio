@@ -977,6 +977,98 @@ video {
   }
 }
 
+/* Título da seção */
+
+.section-title {
+  text-align: center;
+  font-family: Fira Sans, Arial, Times New Roman;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .section-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .section-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Subtítulo da seção */
+
+.section-subtitle {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  text-align: center;
+  font-family: Fira Sans, Arial, Times New Roman;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+@media (min-width: 640px) {
+  .section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .section-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 /* Container da seção 'formações' */
 
 .container-formations {
@@ -1116,18 +1208,23 @@ video {
   }
 }
 
+/* Estilização da seção de projetos */
+
 .container-projects {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
 }
 
-.card-projects {
-  width: 400px;
+/* Estilização de cada cartão de projeto */
+
+.card-project {
+  position: relative;
+  margin-bottom: 2.5rem;
+  width: 80%;
   overflow: hidden;
   border-radius: 0.75rem;
   border-width: 2px;
@@ -1140,11 +1237,48 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+@media (min-width: 640px) {
+  .card-project {
+    width: 45%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-project {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-project {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-project {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .card-project {
+    width: 40%;
+  }
+}
+
+/* Estilização do texto dentro do cartão de projeto */
+
 .card-project-text {
   visibility: hidden;
-  position: relative;
-  margin-top: -200px;
-  max-width: 400px;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem;
   text-align: center;
   transition-property: all;
@@ -1271,15 +1405,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1290,11 +1415,6 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.py-\[0\.65rem\] {
-  padding-top: 0.65rem;
-  padding-bottom: 0.65rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1303,22 +1423,9 @@ video {
   padding-top: 0.5rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.font-fira-sans {
-  font-family: Fira Sans, Arial, Times New Roman;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-7xl {
@@ -1335,17 +1442,13 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .text-black {
@@ -1381,14 +1484,8 @@ video {
     width: 300px;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .sm\:snap-center {
+    scroll-snap-align: center;
   }
 }
 
@@ -1413,14 +1510,9 @@ video {
     scroll-snap-align: center;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1445,13 +1537,13 @@ video {
     scroll-snap-align: center;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1481,13 +1573,8 @@ video {
     scroll-snap-align: center;
   }
 
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
@@ -1517,13 +1604,13 @@ video {
     scroll-snap-align: center;
   }
 
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .\32xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
-  .\32xl\:text-lg {
-    font-size: 1.125rem;
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }

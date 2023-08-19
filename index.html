@@ -10,16 +10,14 @@
     <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
     <title>Portfólio de Igor Augusto</title>
 
-    <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="dist/output.css">
+    <!-- Inclusão de estilos -->
+    <link rel="stylesheet" href="dist/output.css"><!-- Estilos do Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/style.css"><!-- Estilos personalizados -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/css/style.css">
-
-    <!-- JavaScript -->
+    <!-- Inclusão de script JavaScript -->
     <script src=" src/js/main.js" defer></script>
 
-    <!-- Font-family Fira Sans -->
+    <!-- Fonte Fira Sans do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
@@ -48,7 +46,7 @@
                     <a href="#experiencia" class="navbar-text">Experiência</a>
                 </div>
                 <div class="navbar">
-                    <a href="#" class="navbar-text">Contato</a>
+                    <a href="#contato" class="navbar-text">Contato</a>
                 </div>
             </nav>
 
@@ -70,7 +68,7 @@
                     <a href="#inicio" class="menu-text">Início</a>
                     <a href="#formacoes" class="menu-text">Formação</a>
                     <a href="#experiencia" class="menu-text">Experiência</a>
-                    <button class="menu-button"><a href="#">Entrar em contato</a></button>
+                    <button class="menu-button"><a href="#contato">Entrar em contato</a></button>
                 </div>
             </div>
         </header>
@@ -95,9 +93,10 @@
             </div>
         </div>
 
-        <section class="md:snap-center lg:snap-center xl:snap-center 2xl:snap-center sm:my-0 my-20">
-            <h1 class="font-fira-sans text-center font-bold text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl" id="formacoes">Formações</h1>
-            <h2 class="font-fira-sans text-center font-semibold py-[0.65rem] text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg">Minhas formações e certificações mais importantes</h2>
+        <!-- Seção de Formações -->
+        <section class="sm:snap-center md:snap-center lg:snap-center xl:snap-center 2xl:snap-center sm:my-0 my-20">
+            <h1 class="section-title" id="formacoes">Formações</h1>
+            <h2 class="section-subtitle">Minhas formações e certificações mais importantes</h2>
             <div class="container-formations">
                 <div class="card">
                     <figure>
@@ -162,38 +161,47 @@
             </div>
         </section>
 
-        <section class="md:snap-center lg:snap-center xl:snap-center 2xl:snap-center sm:my-0 my-20">
-            <h1 class=" font-fira-sans text-center font-bold text-3xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl" id="experiencia">Projetos</h1>
-            <h2 class="font-fira-sans text-center font-semibold py-[0.65rem] text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg">Explore os destaques dos meus principais projetos.</h2>
+        <!-- Seção de Projetos -->
+        <section class="sm:snap-center md:snap-center lg:snap-center xl:snap-center 2xl:snap-center sm:my-0 my-20">
+            <h1 class="section-title" id="experiencia">Projetos</h1>
+            <h2 class="section-subtitle">Explore os destaques dos meus principais projetos.</h2>
 
-            <div class="container-projects"><!-- Container -->
-                <div class="card-projects border-2 border-black rounded-xl">
-                    <figure>
-                        <img src=" src/img/projeto1.png" alt="Projeto 2" class="max-w-full rounded-xl">
-                    </figure>
+            <div class="container-projects">
+                <div class="card-project">
+                    <img src=" src/img/projeto1.png" alt="Projeto 2" class="rounded-xl">
                     <div class="card-project-text">
-                        <h2 class="text-xl font-bold pb-2">Sistema de Plataforma de empregos</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo fuga laudantium eaque dicta porro dolor asperiores? Eius fugiat ex nihil maiores cum similique, quod et nostrum officiis! Nobis, ea.</p>
+                        <h2 class="text-lg lg:text-xl xl:text-xl 2xl:text-xl font-bold pb-2">Sistema de Plataforma de empregos</h2>
+                        <p class="hidden lg:block xl:block 2xl:block text-sm md:text-base lg:text-base xl:text-xl 2xl:text-base">O projeto visa criar uma plataforma de empregos voltada para indivíduos que residem em regiões de difícil acesso a oportunidades de trabalho. O objetivo é fornecer uma solução para conectar essas pessoas a vagas de emprego.</p>
                         <div class="flex justify-center gap-5 pt-2">
-                            <a href="https://github.com/igoraugustobrz/Organic-agriculture" target="_blank"><i class="fa-brands fa-github animate-pulse text-2xl"></i></a>
+                            <a href="https://github.com/igoraugustobrz/Organic-agriculture" target="_blank"><i class="fa-brands fa-github animate-pulse text-2xl" title="GitHub"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="card-projects">
-                    <figure>
-                        <img src=" src/img/projeto2.png" alt="Projeto 2" class="max-w-full rounded-xl">
-                    </figure>
+                <div class="card-project">
+                    <img src=" src/img/projeto2.png" alt="Projeto 2" class="max-w-full rounded-xl">
                     <div class="card-project-text">
-                        <h2 class="text-xl font-bold pb-2">Clone da Amazon</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo fuga laudantium eaque dicta porro dolor asperiores? Eius fugiat ex nihil maiores cum similique, quod et nostrum officiis! Nobis, ea.</p>
+                        <h2 class="text-lg lg:text-xl xl:text-xl 2xl:text-xl font-bold pb-2">Clone da Amazon</h2>
+                        <p class="hidden lg:block xl:block 2xl:block text-sm md:text-base lg:text-base xl:text-xl 2xl:text-base">O projeto é uma recriação detalhada de um dos maiores e mais influentes e-commerces do mundo, com o objetivo de oferecer uma experiência de usuário excepcional. A plataforma replica a original e foi desenvolvida com dedicação e paixão.</p>
                         <div class="flex justify-center gap-5 pt-2">
-                            <a href="https://github.com/igoraugustobrz/Organic-agriculture" target="_blank"><i class="fa-brands fa-github animate-pulse text-2xl"></i></a>
-                            <a href="https://bit.ly/cloneAmazon" target="_blank"><i class="fa-solid fa-link animate-pulse text-2xl"></i></a>
+                            <a href="https://bit.ly/repo-github" target="_blank"><i class="fa-brands fa-github animate-pulse text-2xl" title="GitHub"></i></a>
+                            <a href="https://bit.ly/cloneAmazon" target="_blank"><i class="fa-solid fa-link animate-pulse text-2xl" title="Aplicação"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-project">
+                    <img src=" src/img/projeto3.png" alt="Projeto 2" class="max-w-full rounded-xl">
+                    <div class="card-project-text">
+                        <h2 class="text-lg lg:text-xl xl:text-xl 2xl:text-xl font-bold pb-2">Título 3</h2>
+                        <p class="hidden lg:block xl:block 2xl:block text-sm md:text-base lg:text-base xl:text-xl 2xl:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo fuga laudantium eaque dicta porro dolor asperiores? Eius fugiat ex nihil maiores cum similique, quod et nostrum officiis! Nobis, ea.</p>
+                        <div class="flex justify-center gap-5 pt-2">
+                            <a href="#" target="_blank"><i class="fa-brands fa-github animate-pulse text-2xl"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-link animate-pulse text-2xl"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </div>
 
 </body>
