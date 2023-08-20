@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="dist/output.css"><!-- Estilos do Tailwind CSS -->
     <link rel="stylesheet" href="src/css/style.css"><!-- Estilos personalizados -->
 
-    <!-- Inclusão de script JavaScript -->
-    <script src=" src/js/main.js" defer></script>
+    <!-- Inclusão do SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- Fonte Fira Sans do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,8 +142,8 @@
                     <h3 class="card-title">React.js</h3>
                     <hr class="text-white">
                     <ul class="text-[16px]">
-                        <li class="text-gray-100"><strong class="text-white">Carga horária: </strong>11hs</li>
-                        <li class="text-gray-100"><strong class="text-white">Instituição: </strong>Udemy</li>
+                        <li class="text-gray-100"><strong class="text-white">Carga horária: </strong>18hs</li>
+                        <li class="text-gray-100"><strong class="text-white">Instituição: </strong>Origamid</li>
                         <li class="text-gray-100"><strong class="text-white">Emissão: </strong>08/23</li>
                     </ul>
                 </div>
@@ -202,8 +203,40 @@
             </div>
         </section>
 
+        <!-- Seção de Contato -->
+        <section class="sm:snap-center md:snap-center lg:snap-center xl:snap-center 2xl:snap-center sm:my-0 my-20">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="section-title" id="contato">Contato</h1>
+                <h2 class="section-subtitle max-w-xl py-5">Gostou do projeto? Quer compartilhar suas opiniões e sugestões? Ficarei feliz em receber seu feedback!</h2>
+            </div>
+            <div class="grid grid-cols-1 mx-auto w-[80%] lg:w-full xl:w-full 2xl:w-full lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 lg:gap-x-10 mb-20">
+                <form action="" method="post" id="form" class="flex flex-col gap-y-10"> <!-- https://formsubmit.co/igoraugustobz@gmail.com -->
+                    <div class="flex flex-col">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Como posso te chamar?" required oninvalid="this.setCustomValidity('Digite o seu nome para continuar.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Onde posso contatá-lo?" required class="border-b-2 border-black p-2 valid:bg-gray-200">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="messagem">Mensagem</label>
+                        <textarea name="" id="messagem" name="message" cols="30" rows="4" placeholder="O que você gostaria de me dizer?" required oninvalid="this.setCustomValidity('Não se esqueça de digitar a sua mensagem.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 resize-none"></textarea>
+                    </div>
+                    <input type="submit" value="ENVIAR" id="btnSubmit" class="bg-black text-white text-center rounded-md py-4 px-2 active:scale-105 transition duration-300">
+                    <input type="hidden" name="_subject" value="Portfólio Igor Augusto - Nova mensagem de contato">
+                    <input type="text" name="_honey" class="hidden">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                <figure class="flex justify-end">
+                    <img src="src/img/planeta-destrocado.svg" alt="Imagem de um Planeta destroçado" class="hidden lg:block xl:block 2xl:block lg:w-[100%] xl:w-[90%] 2xl:w-[90%]">
+                </figure>
+            </div>
+        </section>
     </div>
 
+    <!-- Inclusão de script JavaScript -->
+    <script src=" src/js/main.js" defer></script>
 </body>
 
 </html>
