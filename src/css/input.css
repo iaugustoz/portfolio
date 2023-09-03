@@ -77,7 +77,7 @@
 
     /* Subtítulo da seção */
     .section-subtitle {
-        @apply font-fira-sans text-center font-semibold py-[0.65rem] text-lg sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg;
+        @apply font-fira-sans text-center font-semibold py-[0.65rem] text-lg;
     }
 
     /* Container da seção 'formações' */

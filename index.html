@@ -82,7 +82,7 @@
                 <p id="inicio" class="home-page-title">Desenvolvedor<br>Front-End &<br>UX/UI Designer</p>
                 <p class="home-page-subtitle">Apaixonado por tecnologia</p>
                 <div class="self-center w-[250px] sm:w-[300px] xl:w-[530px] 2xl:w-[530px] mt-5">
-                    <button class="home-page-button"><a href="#">Entrar em contato</a></button>
+                    <a href="#contato"><button class="home-page-button">Entrar em contato</button></a>
                 </div>
             </div>
         </main>
@@ -204,24 +204,24 @@
         </section>
 
         <!-- Seção de Contato -->
-        <section class="sm:snap-center md:snap-center lg:snap-center xl:snap-center 2xl:snap-center sm:my-0 my-20">
+        <section class="sm:my-0 py-14">
             <div class="flex flex-col justify-center items-center">
                 <h1 class="section-title" id="contato">Contato</h1>
-                <h2 class="section-subtitle max-w-xl py-5">Gostou do projeto? Quer compartilhar suas opiniões e sugestões? Ficarei feliz em receber seu feedback!</h2>
+                <h2 class="section-subtitle max-w-[80%] py-5">Gostou do projeto? Quer compartilhar suas opiniões e sugestões? Ficarei feliz em receber seu feedback!</h2>
             </div>
             <div class="grid grid-cols-1 mx-auto w-[80%] lg:w-full xl:w-full 2xl:w-full lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 lg:gap-x-10 mb-20">
                 <form action="" method="post" id="form" class="flex flex-col gap-y-10"> <!-- https://formsubmit.co/igoraugustobz@gmail.com -->
                     <div class="flex flex-col">
                         <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Como posso te chamar?" required oninvalid="this.setCustomValidity('Digite o seu nome para continuar.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200">
+                        <input type="text" name="name" id="name" placeholder="Como posso te chamar?" required oninvalid="this.setCustomValidity('Digite o seu nome para continuar.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 focus:outline-none">
                     </div>
                     <div class="flex flex-col">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Onde posso contatá-lo?" required class="border-b-2 border-black p-2 valid:bg-gray-200">
+                        <input type="email" name="email" id="email" placeholder="Onde posso contatá-lo?" required class="border-b-2 border-black p-2 valid:bg-gray-200 focus:outline-none">
                     </div>
                     <div class="flex flex-col">
                         <label for="messagem">Mensagem</label>
-                        <textarea name="" id="messagem" name="message" cols="30" rows="4" placeholder="O que você gostaria de me dizer?" required oninvalid="this.setCustomValidity('Não se esqueça de digitar a sua mensagem.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 resize-none"></textarea>
+                        <textarea name="" id="messagem" name="message" cols="30" rows="4" placeholder="O que você gostaria de me dizer?" required oninvalid="this.setCustomValidity('Não se esqueça de digitar a sua mensagem.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 resize-none focus:outline-none"></textarea>
                     </div>
                     <input type="submit" value="ENVIAR" id="btnSubmit" class="bg-black text-white text-center rounded-md py-4 px-2 active:scale-105 transition duration-300">
                     <input type="hidden" name="_subject" value="Portfólio Igor Augusto - Nova mensagem de contato">
@@ -235,6 +235,16 @@
         </section>
     </div>
 
+    <footer class="sm:snap-center md:snap-center lg:snap-center xl:snap-center 2xl:snap-center bg-black h-20">
+        <div class="container-portfolio flex justify-between items-center h-full">
+            <p class="text-white text-center">Copyrigtht © 2023 by Igor Augusto | All Rights Reserved</p>
+            <div class="flex gap-x-5">
+                <a href="https://github.com/igoraugustobrz" target="_blank"><i class="fa-brands fa-square-github text-white text-3xl  active:scale-110 transition duration-300"></i></a>
+                <a href="https://www.linkedin.com/in/igorbrz/" target="_blank"><i class="fa-brands fa-linkedin text-white text-3xl  active:scale-110 transition duration-300"></i></a>
+                <a href="https://wa.me/qr/DAF4OFJFFV2FC1" target="_blank"><i class="fa-brands fa-whatsapp text-white text-3xl active:scale-110 transition duration-300"></i></a>
+            </div>
+        </div>
+    </footer>
     <!-- Inclusão de script JavaScript -->
     <script src=" src/js/main.js" defer></script>
 </body>
