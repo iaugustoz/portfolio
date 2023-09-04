@@ -6,16 +6,16 @@ const listMenu = document.getElementById('list-menu');
 let menuVisible = false; // Variável para controlar o estado do menu
 
 // Lógica que ativa a lista suspensa do menu
-menu.addEventListener('click', function() {
+menu.addEventListener('click', function () {
   // Definindo as animações para o menu deslizante
   const slideIn = [
-    {transform: 'translateX(100%)', easing: 'ease-out'},
-    {transform: 'translateX(0%)', easing: 'ease-out'}
+    { transform: 'translateX(100%)', easing: 'ease-out' },
+    { transform: 'translateX(0%)', easing: 'ease-out' }
   ];
 
   const slideOut = [
-    {transform: 'translateX(0%)', easing: 'ease-out'},
-    {transform: 'translateX(100%)', easing: 'ease-out'}
+    { transform: 'translateX(0%)', easing: 'ease-out' },
+    { transform: 'translateX(100%)', easing: 'ease-out' }
   ];
 
   const timing = {
@@ -25,7 +25,7 @@ menu.addEventListener('click', function() {
   // Se o menu está visível, anima para torná-lo invisível
   if (menuVisible) {
     const slideAnimation = slide.animate(slideOut, timing);
-    slideAnimation.onfinish = function() {
+    slideAnimation.onfinish = function () {
       listMenu.classList.add('hidden');
     };
   } else { // Caso contrário, anima para torná-lo visível
@@ -40,8 +40,8 @@ menu.addEventListener('click', function() {
 const arrow = document.getElementById('arrow');
 const destinationElement = document.getElementById('formacoes');
 
-arrow.addEventListener('click', function() {
-  destinationElement.scrollIntoView({behavior: 'smooth'});
+arrow.addEventListener('click', function () {
+  destinationElement.scrollIntoView({ behavior: 'smooth' });
 });
 
 
@@ -49,7 +49,7 @@ arrow.addEventListener('click', function() {
 const form = document.getElementById('form');
 
 // Adiciona um evento de escuta ao formulário para quando for submetido
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault(); // Impede o envio automático do formulário
 
   // Obtém as referências para os elementos do formulário
@@ -57,7 +57,7 @@ form.addEventListener('submit', function(event) {
   const inputEmail = document.getElementById('email');
   const inputMensagem = document.getElementById('message');
 
-  if ( (!inputNome.value.trim()) && (!inputEmail.value.trim()) && (inputMensagem.value.trim()) ) {
+  if ((!inputNome.value.trim()) && (!inputEmail.value.trim()) && (inputMensagem.value.trim())) {
 
     // Campos não preenchidos
 
@@ -65,21 +65,12 @@ form.addEventListener('submit', function(event) {
     // Campos preenchidos 
 
     // Define um atraso de 2 segundos antes de exibir uma mensagem de sucesso usando o Swal (SweetAlert)
-    setTimeout(function() {
+    setTimeout(function () {
 
       Swal.fire({
         icon: 'success',
         title: 'Tudo certo por aqui!',
         text: 'Sucesso! Irei responder em breve.',
-        footer: '<a href="#inicio" id="fecharPopup">Voltar à página inicial?</a>'
-      });
-    
-      // Obtém a referência ao link de rodapé
-      const linkRodape = document.getElementById('fecharPopup');
-    
-      // Adiciona um evento de clique ao link de rodapé
-      linkRodape.addEventListener('click', function() {
-        Swal.close(); // Fecha o pop-up do Sweet Alert
       });
 
     }, 800);
