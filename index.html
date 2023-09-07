@@ -213,7 +213,7 @@
                 <h2 class="section-subtitle max-w-[80%] py-5">Gostou do projeto? Quer compartilhar suas opiniões e sugestões? Ficarei feliz em receber seu feedback!</h2>
             </div>
             <div class="grid grid-cols-1 mx-auto w-[80%] lg:w-full xl:w-full 2xl:w-full lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 lg:gap-x-10 mb-20">
-                <form action="" method="post" id="form" class="flex flex-col gap-y-10"> <!-- https://formsubmit.co/igoraugustobz@gmail.com -->
+                <form action="https://formsubmit.co/igoraugustobz@gmail.com" method="post" id="form" class="flex flex-col gap-y-10">
                     <div class="flex flex-col">
                         <label for="name">Nome</label>
                         <input type="text" name="name" id="name" placeholder="Como posso te chamar?" required oninvalid="this.setCustomValidity('Digite o seu nome para continuar.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 focus:outline-none">
@@ -224,12 +224,13 @@
                     </div>
                     <div class="flex flex-col">
                         <label for="messagem">Mensagem</label>
-                        <textarea name="" id="messagem" name="message" cols="30" rows="4" placeholder="O que você gostaria de me dizer?" required oninvalid="this.setCustomValidity('Não se esqueça de digitar a sua mensagem.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 resize-none focus:outline-none"></textarea>
+                        <textarea name="message" id="messagem" cols=" 30" rows="4" placeholder="O que você gostaria de me dizer?" required oninvalid="this.setCustomValidity('Não se esqueça de digitar a sua mensagem.')" oninput="this.setCustomValidity('')" class="border-b-2 border-black p-2 valid:bg-gray-200 resize-none focus:outline-none"></textarea>
                     </div>
                     <input type="submit" value="ENVIAR" id="btnSubmit" class="bg-black text-white text-center rounded-md py-4 px-2 active:scale-105 transition duration-300">
+
                     <input type="hidden" name="_subject" value="Portfólio Igor Augusto - Nova mensagem de contato">
                     <input type="text" name="_honey" class="hidden">
-                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://iaugusto.vercel.app/">
                 </form>
                 <figure class="flex justify-end">
                     <img src="src/img/planeta-destrocado.svg" alt="Imagem de um Planeta destroçado" class="hidden lg:block xl:block 2xl:block lg:w-[100%] xl:w-[90%] 2xl:w-[90%]">
