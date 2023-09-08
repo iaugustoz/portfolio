@@ -57,7 +57,7 @@
 
     /* Estiliza o subtítulo da página inicial */
     .home-page-subtitle {
-        @apply font-fira-sans text-2xl text-center md:text-center lg:text-left xl:text-left 2xl:text-left w-full my-[27.5px] text-gray-500;
+        @apply font-fira-sans text-2xl flex items-center justify-center xl:justify-start w-full my-[27.5px] text-gray-500;
     }
 
     /* Estiliza o botão da página inicial */
