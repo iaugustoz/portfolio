@@ -1,12 +1,15 @@
 # Portfolio
+
 <div align="center">
 <img src="src/img/site.png" width="2000px" alt="Imagem do site" title="Imagem do site"/>
 </div>
 
 ## Descrição
+
 Bem-vindo ao meu portfólio! Sou um desenvolvedor apaixonado e este é o lugar onde compartilho meu trabalho, projetos e conquistas. Com uma paixão pela programação e um compromisso com a qualidade, estou constantemente buscando novos desafios e oportunidades de aprendizado.
 
 ## Status do projeto
+
 Projeto concluído.
 
 ## Pré-requisitos
@@ -60,3 +63,7 @@ git push origin minha-contribuicao
 - Igor Augusto
 - E-mail: igoraugustobz@gmail.com
 - Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/igoraugustobrz/).
+
+## ⚠️ Importante Notice
+
+This project version is legacy.
