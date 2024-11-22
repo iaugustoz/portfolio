@@ -1,61 +1,88 @@
-# Portfolio
+# 🎨 Portfólio 🎨
 
-## Descrição
+<div align="center">
+<img src="" width="1000px" alt="Imagem do site" title="Imagem do site"/>
+</div>
 
-Bem-vindo ao meu portfólio! Sou um desenvolvedor apaixonado e este é o lugar onde compartilho meu trabalho, projetos e conquistas. Com uma paixão pela programação e um compromisso com a qualidade, estou constantemente buscando novos desafios e oportunidades de aprendizado.
+## 📜 **Description**
 
-## Status do projeto
+Description in development...
 
-Projeto concluído.
+---
 
-## Pré-requisitos
+## 🚀 **Project Status**
 
-- HTML5;
-- Tailwind CSS (v3.3.3 ou superior);
-- JavaScript (ECMAScript 2022).
+⚙️ Project in development...
 
-## Instalando
+---
 
-1. Clone o repositório para o seu ambiente local:
+## 💻 **Technologies Used**
+
+- **Angular** (v17.0.0)
+
+## 📦 **Dependencies**
+
+- Tailwind CSS (v3.4.15)
+
+---
+
+## 🔧 **Installation**
+
+Follow the steps below to run the project locally:
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/iaugustoz/portfolio
+```
+
+2. **Navigate to the project directory:**
 
 ```
-$ git clone https://github.com/igoraugustobrz/Portfolio
+cd portfolio
 ```
 
-2. Navegue até o diretório do projeto.
+4. **Start the project**
 
 ```
-$ cd Portfolio
+npm start
 ```
 
-## Contribuindo
+---
 
-Contribuições são bem-vindas! Se você quiser contribuir para o projeto, siga as etapas abaixo:
+## 🤝 Contributing
 
-1. Fork o repositório e clone-o para o seu ambiente local.
+Contributions are always welcome! To contribute to this project, please follow these steps:
 
-2. Crie uma nova branch:
+1. **Fork the project and clone the repository.**
+2. **Create a branch for your changes:**
 
 ```
 git checkout -b minha-contribuicao
 ```
 
-3. Faça as alterações desejadas e commit-as:
+3. **Implement your changes and commit:**
 
 ```
 git commit -m "Minha contribuição"
 ```
 
-4. Envie suas alterações para o repositório remoto:
+4. **Push your changes to the remote repository:**
 
 ```
-git push origin minha-contribuicao
+git push origin my-contribution
 ```
 
-5. Abra uma solicitação de pull no repositório original.
+---
 
-## Autor
+## 👨‍💻 Author
 
 - Igor Augusto
-- E-mail: igoraugustobz@gmail.com
-- Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/igoraugustobrz/).
+- 📧 E-mail: iaugustodeveloper@gmail.com
+- [Instagram](https://www.instagram.com/iaugusto__/) | [Portfólio](https://iaugusto.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/igorbrz/)
+
+---
+
+## ⚠️ Importante Notice
+
+This project is still under development, so some features may be incomplete or subject to change. If you find any bugs, don't hesitate to open an issue!
