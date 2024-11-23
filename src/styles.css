@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .header-container {
+    @apply mx-auto max-w-[75%];
+  }
+}
