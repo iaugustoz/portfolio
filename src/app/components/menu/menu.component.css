@@ -2,6 +2,6 @@
 
 @layer components {
   .line {
-    @apply border-white border-[2px] rounded;
+    @apply border-white border-[1.85px] rounded;
   }
 }
