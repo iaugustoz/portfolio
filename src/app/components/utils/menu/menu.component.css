@@ -1,6 +1,10 @@
 @tailwind components;
 
 @layer components {
+  .menu {
+    @apply flex flex-col items-end gap-y-1 p-4 w-16;
+  }
+
   .line {
     @apply border-white border-[1.85px] rounded;
   }
