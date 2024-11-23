@@ -1,14 +1,16 @@
 <header class="border-b border-zinc-600 py-5">
   <nav class="header-container flex justify-between items-center">
-    <h1 class="text-white text-[44px] font-allura">Igor Augusto</h1>
-    <div class="flex items-center gap-10">
-      <p class="text-white">About Me</p>
-      <p class="text-white">Skills</p>
-      <p class="text-white">Projects</p>
+    <h1 class="text-white text-4xl sm:text-[40px] font-allura">Igor Augusto</h1>
+    <div class="flex items-center md:gap-8 lg:gap-10">
+      <p class="text-white hidden md:flex">About Me</p>
+      <p class="text-white hidden md:flex">Skills</p>
+      <p class="text-white hidden md:flex">Projects</p>
 
-      <button class="text-white border-[1.5px] rounded-full px-6 py-4 ml-20">
+      <button class="text-white border-[1.5px] rounded-full px-6 py-4 md:ml-0 lg:ml-20 hidden md:flex">
         Contact
       </button>
+
+      <app-menu class="md:hidden"></app-menu>
     </div>
   </nav>
 </header>

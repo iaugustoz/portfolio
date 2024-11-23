@@ -4,6 +4,6 @@
 
 @layer base {
   .header-container {
-    @apply mx-auto max-w-[75%];
+    @apply mx-auto max-w-[80%] 2xl:max-w-[75%];
   }
 }

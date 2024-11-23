@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .line {
+    @apply border-white border-[2px] rounded;
+  }
+}
