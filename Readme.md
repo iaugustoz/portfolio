@@ -23,6 +23,7 @@ Description in development...
 ## 📦 **Dependencies**
 
 - Tailwind CSS (v3.4.15)
+- PrimeIcons (v7.0.0)
 
 ---
 
