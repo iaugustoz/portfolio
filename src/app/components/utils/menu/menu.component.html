@@ -1,5 +1,9 @@
-<div class="menu">
-  <span class="line w-8"></span>
-  <span class="line w-6"></span>
-  <span class="line w-4"></span>
+<div>
+  <button class="menu" (click)="toggleMenu()" aria-label="Toggle Menu">
+    <span class="menu-line w-8"></span>
+    <span class="menu-line w-6"></span>
+    <span class="menu-line w-4"></span>
+  </button>
+
+  <ul class="menu-dropdown" *ngIf="isMenuOpen"></ul>
 </div>

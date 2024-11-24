@@ -2,10 +2,18 @@
 
 @layer components {
   .menu {
-    @apply flex flex-col items-end gap-y-1 p-4 w-16;
+    @apply flex flex-col items-end gap-y-1 p-2 w-12 cursor-pointer;
   }
 
-  .line {
-    @apply border-white border-[1.85px] rounded;
+  .menu-line {
+    @apply border-white border-[1.85px];
+  }
+
+  .menu-dropdown {
+    @apply absolute top-20 left-0 right-0 bottom-[600px] bg-black rounded-b-3xl;
+  }
+  
+  .menu-dropdown li {
+    @apply list-none
   }
 }
