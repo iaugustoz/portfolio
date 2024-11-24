@@ -1,9 +1,0 @@
-@tailwind components;
-
-@layer components {
-  .close-menu {
-    @apply text-lg text-[#F26C6C] hover:bg-red-500/30  
-    rounded-full px-2 py-0.5
-    hover:transition-all;
-  }
-}
