@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .menu {
+    @apply flex flex-col items-end gap-y-1 p-2 w-12 cursor-pointer;
+  }
+
+  .menu-line {
+    @apply border-white border-[1.85px];
+  }
+
+  .menu-dropdown {
+    @apply absolute top-20 left-0 right-0 bottom-auto bg-black rounded-b-3xl px-14 pb-8;
+  }
+  
+  .menu-dropdown li {
+    @apply list-none
+  }
+}

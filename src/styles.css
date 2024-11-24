@@ -1,0 +1,11 @@
+@import "primeicons/primeicons.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .header-container {
+    @apply mx-auto max-w-[80%] 2xl:max-w-[75%];
+  }
+}
