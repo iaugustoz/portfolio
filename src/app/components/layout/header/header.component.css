@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .header-logo {
+    @apply text-white text-4xl sm:text-[40px] font-allura;
+  }
+
+  .header-navbar-options {
+    @apply text-white cursor-pointer hidden md:flex;
+  }
+
+  .header-button {
+    @apply text-white border-[1.5px] rounded-full px-6 py-4 md:ml-0 lg:ml-10 hidden md:flex;
+  }
+}

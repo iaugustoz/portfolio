@@ -23,6 +23,7 @@ Description in development...
 ## 📦 **Dependencies**
 
 - Tailwind CSS (v3.4.15)
+- PrimeIcons (v7.0.0)
 
 ---
 
@@ -38,13 +39,22 @@ git clone https://github.com/iaugustoz/portfolio
 
 2. **Navigate to the project directory:**
 
-```
+```bash
 cd portfolio
+```
+
+3. **Install the dependencies:**
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+npm install primeicons
 ```
 
 4. **Start the project**
 
-```
+```bash
 npm start
 ```
 
@@ -57,19 +67,19 @@ Contributions are always welcome! To contribute to this project, please follow t
 1. **Fork the project and clone the repository.**
 2. **Create a branch for your changes:**
 
-```
+```bash
 git checkout -b minha-contribuicao
 ```
 
 3. **Implement your changes and commit:**
 
-```
+```bash
 git commit -m "Minha contribuição"
 ```
 
 4. **Push your changes to the remote repository:**
 
-```
+```bash
 git push origin my-contribution
 ```
 
