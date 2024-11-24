@@ -10,6 +10,6 @@
   }
 
   .header-button {
-    @apply text-white border-[1.5px] rounded-full px-6 py-4 md:ml-0 lg:ml-20 hidden md:flex;
+    @apply text-white border-[1.5px] rounded-full px-6 py-4 md:ml-0 lg:ml-10 hidden md:flex;
   }
 }
