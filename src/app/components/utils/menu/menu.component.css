@@ -16,4 +16,8 @@
   .menu-dropdown li {
     @apply list-none
   }
+
+  .contact-menu-button {
+    @apply text-white text-center border-[1.5px] rounded-full px-6 py-3;
+  }
 }
