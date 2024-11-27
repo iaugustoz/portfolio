@@ -1,5 +1,12 @@
 @import "primeicons/primeicons.css";
 
+@font-face {
+  font-family: "identification-05";
+  src: url("./assets/fonts/identification-05-font.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
