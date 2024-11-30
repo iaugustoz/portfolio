@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        allura: ["allura"],
-        "identification-05": ["identification-05",],
+        "identification-05": ["identification-05"],
       },
     },
   },
