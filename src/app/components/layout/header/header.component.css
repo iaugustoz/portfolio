@@ -2,7 +2,11 @@
 
 @layer components {
   .header-logo {
-    @apply text-white text-4xl sm:text-5xl font-identification-05 align-bottom;
+    @apply text-white text-4xl sm:text-5xl font-identification-05 align-bottom select-none;
+  }
+
+  .header-container {
+    @apply flex justify-between items-center;
   }
 
   .header-navbar-options {
