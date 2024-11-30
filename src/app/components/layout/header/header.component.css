@@ -2,7 +2,7 @@
 
 @layer components {
   .header-logo {
-    @apply text-white text-4xl sm:text-5xl font-identification-05 align-bottom select-none;
+    @apply text-white text-2xl sm:text-[26px] font-playfair-display align-bottom select-none;
   }
 
   .header-container {
