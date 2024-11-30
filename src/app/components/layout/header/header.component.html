@@ -1,14 +1,37 @@
 <header class="border-b border-zinc-600 py-5 bg-black">
-  <nav class="header-container flex justify-between items-center">
-    <h1 class="header-logo">IGOR</h1>
+  <nav class="header-container">
+    <!-- <img class="w-12 h-12" src="assets/images/logo.png" alt="Logo" /> -->
+    <h1 class="header-logo flex flex-col text-center">IGOR</h1>
+
     <div class="flex items-center md:gap-8 lg:gap-10">
-      <p class="header-navbar-options">About Me</p>
-      <p class="header-navbar-options">Skills</p>
-      <p class="header-navbar-options">Projects</p>
+      <div class="flex gap-x-4">
+        <button
+          class="select-none"
+          [ngClass]="{
+            'font-bold text-white': selectedLanguage() === 'en',
+            'text-gray-200': selectedLanguage() !== 'en'
+          }"
+          (click)="setLanguage('en')"
+        >
+          EN
+        </button>
 
-      <button class="header-button">Contact</button>
+        <button
+          class="select-none"
+          [ngClass]="{
+            'font-bold text-white': selectedLanguage() === 'pt',
+            'text-gray-300': selectedLanguage() !== 'pt'
+          }"
+          (click)="setLanguage('pt')"
+        >
+          PT
+        </button>
+      </div>
 
-      <app-menu class="md:hidden"></app-menu>
+      <div class="flex items-center ml-6 md:ml-0">
+        <p class="hidden sm:flex text-white text-sm uppercase">menu</p>
+        <app-menu></app-menu>
+      </div>
     </div>
   </nav>
 </header>
