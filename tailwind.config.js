@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       fontFamily: {
         "playfair-display": ["playfair-display"], 
-        "identification-05": ["identification-05"],
       },
     },
   },
