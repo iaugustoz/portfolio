@@ -10,7 +10,7 @@
   }
 
   .menu-dropdown {
-    @apply absolute top-20 left-0 right-0 bottom-auto bg-black rounded-b-3xl px-14 pb-8;
+    @apply absolute top-[72px] left-0 md:left-3/4 right-0 -bottom-0 bg-pink-300 rounded-b-3xl px-14 pb-8;
   }
   
   .menu-dropdown li {
