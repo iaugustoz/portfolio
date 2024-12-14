@@ -18,6 +18,6 @@
   }
 
   .contact-menu-button {
-    @apply text-white text-center border-[1.5px] rounded-full px-6 py-3;
+    @apply text-white text-center border-[1.5px] rounded-full px-6 py-3 cursor-pointer;
   }
 }
