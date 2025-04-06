@@ -2,18 +2,14 @@
 
 @layer components {
   .header-logo {
-    @apply text-white text-2xl sm:text-[26px] font-playfair-display align-bottom select-none;
+    @apply text-2xl sm:text-[26px] align-bottom select-none;
   }
 
   .header-container {
     @apply flex justify-between items-center;
   }
 
-  .header-navbar-options {
-    @apply text-white cursor-pointer hidden md:flex;
-  }
-
-  .header-button {
-    @apply text-white border-[1.5px] rounded-full px-6 py-3 md:ml-0 lg:ml-3 hidden md:flex;
+  .header-text {
+    @apply text-lg text-black cursor-pointer select-none;
   }
 }
