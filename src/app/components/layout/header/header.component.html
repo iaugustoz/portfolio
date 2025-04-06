@@ -1,36 +1,14 @@
-<header class="border-b border-zinc-600 py-5 bg-black">
+<header class="py-8">
   <nav class="header-container">
     <h1 class="header-logo flex flex-col text-center">Igor A.</h1>
 
-    <div class="flex items-center md:gap-8 lg:gap-10">
-      <div class="flex gap-x-4">
-        <button
-          class="select-none"
-          [ngClass]="{
-            'font-bold text-white': selectedLanguage() === 'en',
-            'text-gray-200': selectedLanguage() !== 'en'
-          }"
-          (click)="setLanguage('en')"
-        >
-          EN
-        </button>
-
-        <button
-          class="select-none"
-          [ngClass]="{
-            'font-bold text-white': selectedLanguage() === 'pt',
-            'text-gray-300': selectedLanguage() !== 'pt'
-          }"
-          (click)="setLanguage('pt')"
-        >
-          PT
-        </button>
-      </div>
-
-      <div class="flex items-center ml-6 md:ml-0">
-        <p class="hidden sm:flex text-white text-sm uppercase">menu</p>
-        <app-menu></app-menu>
-      </div>
+    <div class="flex gap-x-6 text-white">
+      <h2 class="header-text">Home</h2>
+      <h2 class="header-text">Experience</h2>
+      <h2 class="header-text">Formation</h2>
+      <h2 class="header-text">Projects</h2>
     </div>
+
+    <button class="text-white bg-[#0A0a0a] px-4 py-1 rounded-md">Contato</button>
   </nav>
 </header>
