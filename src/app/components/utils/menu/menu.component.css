@@ -2,7 +2,7 @@
 
 @layer components {
   .menu {
-    @apply flex flex-col gap-y-2 p-2 w-12 cursor-pointer;
+    @apply relative flex flex-col gap-y-2 p-2 w-12 cursor-pointer z-20 overflow-hidden;
   }
 
   .menu-line {
@@ -10,11 +10,14 @@
   }
 
   .menu-dropdown {
-    @apply absolute top-[72px] left-0 md:left-3/4 right-0 -bottom-0 bg-black rounded-b-3xl px-14 pb-8;
+    @apply fixed right-0 bottom-0 
+    w-full h-[100vh] px-14 pt-20 z-10 
+    flex flex-col gap-4 items-center
+    bg-black;
   }
-  
+
   .menu-dropdown li {
-    @apply list-none
+    @apply list-none;
   }
 
   .contact-menu-button {

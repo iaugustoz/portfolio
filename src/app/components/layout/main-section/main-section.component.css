@@ -1,0 +1,16 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.texto-fade {
+  color: #39ff14;
+  animation: fade 3.5s infinite;
+}
