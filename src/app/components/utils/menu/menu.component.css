@@ -10,11 +10,11 @@
   }
 
   .menu-dropdown {
-    @apply absolute top-[72px] left-0 md:left-3/4 right-0 -bottom-0 bg-black rounded-b-3xl px-14 pb-8;
+    @apply absolute top-[72px] w-9/12 right-0 -bottom-0 bg-black px-14 pb-8 z-10;
   }
-  
+
   .menu-dropdown li {
-    @apply list-none
+    @apply list-none;
   }
 
   .contact-menu-button {
