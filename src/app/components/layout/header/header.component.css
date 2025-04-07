@@ -2,7 +2,7 @@
 
 @layer components {
   .header-logo {
-    @apply text-2xl sm:text-[26px] align-bottom select-none;
+    @apply text-xl select-none text-neon-green;
   }
 
   .header-container {
@@ -10,6 +10,10 @@
   }
 
   .header-text {
-    @apply text-lg text-black cursor-pointer select-none;
+    @apply text-lg cursor-pointer select-none hover:text-neon-green;
+  }
+
+  .header-button {
+    @apply text-white bg-transparent border-[1px] border-neon-green px-5 py-1 rounded-md hover:bg-neon-green hover:text-black hover:transition-all active:scale-95;
   }
 }
