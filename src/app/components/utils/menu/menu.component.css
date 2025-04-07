@@ -10,7 +10,10 @@
   }
 
   .menu-dropdown {
-    @apply fixed w-full h-[100vh] right-0 bottom-0 bg-black px-14 pt-20 pb-8 z-10 flex flex-col gap-4 text-center;
+    @apply fixed right-0 bottom-0 
+    w-full h-[100vh] px-14 pt-20 z-10 
+    flex flex-col gap-4 items-center
+    bg-black;
   }
 
   .menu-dropdown li {
