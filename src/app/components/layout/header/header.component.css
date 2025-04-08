@@ -2,7 +2,7 @@
 
 @layer components {
   .header-logo {
-    @apply text-xl select-none text-neon-green;
+    @apply text-xl select-none text-neon-green hover:scale-95;
   }
 
   .header-container {
@@ -14,6 +14,10 @@
   }
 
   .header-button {
-    @apply text-white bg-transparent border-[1px] border-neon-green px-5 py-1 rounded-md hover:bg-neon-green hover:text-black hover:transition-all active:scale-95;
+    @apply 
+    bg-transparent text-white border-[1px] border-neon-green 
+    rounded-md active:shadow-all active:scale-95
+    px-5 py-1 hidden md:flex hover:bg-neon-green
+    hover:text-black hover:transition-all; 
   }
 }
