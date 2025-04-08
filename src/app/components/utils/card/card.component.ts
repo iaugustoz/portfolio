@@ -25,7 +25,7 @@ export class CardComponent {
   private readonly frontendCard: IStack[] = [
     { technology: 'Angular', path: this.PATH_CHECK_ICON },
     { technology: 'Tailwind', path: this.PATH_CHECK_ICON },
-    { technology: 'TypeScript', path: this.PATH_CHECK_ICON },
+    { technology: 'TS', path: this.PATH_CHECK_ICON },
     { technology: 'NgRx', path: this.PATH_UNCHECK_ICON },
     { technology: 'Jasmine', path: this.PATH_UNCHECK_ICON },
     { technology: 'RxJS', path: this.PATH_UNCHECK_ICON },
@@ -33,17 +33,17 @@ export class CardComponent {
 
   private readonly backendCard: IStack[] = [
     { technology: 'Java 8+', path: this.PATH_CHECK_ICON },
-    { technology: 'Apache Kafka', path: this.PATH_CHECK_ICON },
-    { technology: 'Spring Boot', path: this.PATH_CHECK_ICON },
+    { technology: 'Kafka', path: this.PATH_CHECK_ICON },
     { technology: 'Docker', path: this.PATH_CHECK_ICON },
+    { technology: 'Spring Boot', path: this.PATH_CHECK_ICON },
     { technology: 'JUnit', path: this.PATH_CHECK_ICON },
   ];
 
   private readonly architectureCard: IStack[] = [
-    { technology: 'RESTful APIs', path: this.PATH_CHECK_ICON },
+    { technology: 'RESTful', path: this.PATH_CHECK_ICON },
     { technology: 'SOLID', path: this.PATH_CHECK_ICON },
     { technology: 'MSA', path: this.PATH_CHECK_ICON },
-    { technology: 'Design Patterns', path: this.PATH_CHECK_ICON },
+    { technology: 'Patterns', path: this.PATH_CHECK_ICON },
   ];
 
   private readonly databaseCard: IStack[] = [
@@ -58,7 +58,7 @@ export class CardComponent {
 
   private readonly cloudCard: IStack[] = [
     {
-      technology: 'Google Cloud',
+      technology: 'GCP',
       path: this.PATH_CHECK_ICON,
     },
     { technology: 'AWS', path: this.PATH_UNCHECK_ICON },
