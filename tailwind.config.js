@@ -11,6 +11,9 @@ module.exports = {
       '3xl': '1785px'
     },
     extend: {
+      boxShadow: {
+        'all': '0 0 20px 5px rgba(57, 255, 20, 0.5)'
+      },
       colors: {
         "neon-green": "#39ff14",
       },

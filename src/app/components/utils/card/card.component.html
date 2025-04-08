@@ -1,0 +1,22 @@
+<section class="container-app my-10">
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div
+      *ngFor="let card of cards"
+      class="bg-black rounded-xl py-10 px-6 w-full h-full hover:scale-95 hover:transition-transform hover:shadow-all"
+    >
+      <h3 class="card-title">
+        {{ card.title }}
+      </h3>
+      <hr class="divisor" />
+
+      <div class="grid grid-cols-2 gap-2 mt-4">
+        <div class="flex items-center gap-x-2" *ngFor="let tech of card.stack">
+          <img [src]="tech.path" alt="" class="icon" />
+          <p class="card-technology">
+            {{ tech.technology }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
