@@ -14,3 +14,23 @@
   color: #39ff14;
   animation: fade 3.5s infinite;
 }
+
+@tailwind components;
+
+@layer components {
+  .container-main-section {
+    @apply flex flex-col md:flex-row justify-between items-center md:px-0 lg:px-5 md:py-10 xl:px-20 2xl:px-28 3xl:px-40;
+  }
+
+  .download-button {
+    @apply font-bold bg-neon-green rounded-md 
+    mt-10 mb-10 md:mb-0 px-6 py-4 active:scale-95 active:shadow-all 
+    active:shadow-neon-green transition-transform select-none;
+  }
+
+  .image {
+    @apply w-[75%] sm:w-[50%] md:w-[40%] lg:w-[40%]
+    xl:w-[40%] 2xl:w-[35%] 3xl:w-[35%] rounded-full 
+    select-none order-1 md:order-2;
+  }
+}

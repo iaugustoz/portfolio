@@ -20,7 +20,13 @@
     @apply list-none;
   }
 
+  .items-menu {
+    @apply text-white cursor-pointer text-lg 
+    select-none hover:text-neon-green;
+  }
+
   .contact-menu-button {
-    @apply text-white text-center border-[1.5px] rounded-full px-6 py-3 cursor-pointer;
+    @apply text-lg bg-transparent text-white border-[1px] border-neon-green rounded-md
+    px-8 py-1.5 cursor-pointer active:shadow-all active:scale-95 ;
   }
 }
