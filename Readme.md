@@ -6,7 +6,7 @@
 
 ## 📜 **Description**
 
-Description in development...
+Portfólio pessoal.
 
 ---
 
