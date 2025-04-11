@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { CardComponent } from "../../utils/card/card.component";
+import { CardComponent } from '../../utils/card/card.component';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
   imports: [CardComponent],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.css'
+  styleUrl: './skills.component.css',
 })
-export class SkillsComponent {
-
-}
+export class SkillsComponent {}

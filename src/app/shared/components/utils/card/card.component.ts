@@ -65,11 +65,7 @@ export class CardComponent {
   ];
 
   private readonly othersCard: IStack[] = [
-    { technology: 'OpenShift', path: this.PATH_CHECK_ICON },
-    { technology: 'Prometheus', path: this.PATH_UNCHECK_ICON,},
-    { technology: 'SonarQube', path: this.PATH_CHECK_ICON },
-    { technology: 'Grafana', path: this.PATH_UNCHECK_ICON },
-    { technology: 'Kubernetes', path: this.PATH_UNCHECK_ICON,},
+    { technology: 'K8S', path: this.PATH_UNCHECK_ICON },
   ];
 
   public readonly cards: ICard[] = [

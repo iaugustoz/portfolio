@@ -23,7 +23,7 @@ Portfólio pessoal.
 ## 📦 **Dependencies**
 
 - Tailwind CSS (v3.4.15)
-- PrimeIcons (v7.0.0)
+- Animated On Scroll Library (V2.3.4) - biblioteca externa focada em animações de transições de elementos
 
 ---
 
