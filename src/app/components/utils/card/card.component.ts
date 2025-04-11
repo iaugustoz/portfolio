@@ -48,12 +48,11 @@ export class CardComponent {
 
   private readonly databaseCard: IStack[] = [
     { technology: 'Python', path: this.PATH_CHECK_ICON },
-    { technology: 'BigQuery', path: this.PATH_UNCHECK_ICON },
+    { technology: 'BigQuery', path: this.PATH_CHECK_ICON },
     { technology: 'Oracle', path: this.PATH_CHECK_ICON },
-    { technology: 'Firestore', path: this.PATH_UNCHECK_ICON },
+    { technology: 'Firestore', path: this.PATH_CHECK_ICON },
     { technology: 'MySQL', path: this.PATH_CHECK_ICON },
     { technology: 'MongoDB', path: this.PATH_UNCHECK_ICON },
-    { technology: 'PostgreSQL', path: this.PATH_UNCHECK_ICON },
   ];
 
   private readonly cloudCard: IStack[] = [
@@ -65,11 +64,20 @@ export class CardComponent {
     { technology: 'Azure', path: this.PATH_UNCHECK_ICON },
   ];
 
+  private readonly othersCard: IStack[] = [
+    { technology: 'OpenShift', path: this.PATH_CHECK_ICON },
+    { technology: 'Prometheus', path: this.PATH_UNCHECK_ICON,},
+    { technology: 'SonarQube', path: this.PATH_CHECK_ICON },
+    { technology: 'Grafana', path: this.PATH_UNCHECK_ICON },
+    { technology: 'Kubernetes', path: this.PATH_UNCHECK_ICON,},
+  ];
+
   public readonly cards: ICard[] = [
     { title: 'Front-End', stack: this.frontendCard },
     { title: 'Back-End', stack: this.backendCard },
     { title: 'Architecture', stack: this.architectureCard },
     { title: 'Data persistence', stack: this.databaseCard },
     { title: 'Cloud', stack: this.cloudCard },
+    { title: 'Others', stack: this.othersCard },
   ];
 }
