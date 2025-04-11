@@ -2,7 +2,7 @@
 
 @layer components {
   .header-logo {
-    @apply text-xl select-none text-neon-green hover:scale-95;
+    @apply text-xl select-none text-neon-green active:scale-95;
   }
 
   .header-container {
