@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../../utils/card/card.component';
+import { SkillCardComponent } from '../../../../shared/components/card/skill-card/skill-card.component';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CardComponent],
+  imports: [SkillCardComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
 })
