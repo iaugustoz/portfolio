@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuComponent } from '../../../../shared/components/utils/menu/menu.component';
+import { MenuComponent } from '../../../../shared/components/menu/menu.component';
 
 @Component({
   selector: 'app-main-section',

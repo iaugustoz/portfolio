@@ -1,24 +1,16 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-
-interface IStack {
-  technology: string;
-  path: string;
-}
-
-interface ICard {
-  title: string;
-  stack: IStack[];
-}
+import { IStack } from './interfaces/stack.interface';
+import { ICard } from './interfaces/card.interface';
 
 @Component({
   selector: 'app-card',
   standalone: true,
   imports: [NgFor],
-  templateUrl: './card.component.html',
-  styleUrl: './card.component.css',
+  templateUrl: './skill-card.component.html',
+  styleUrl: './skill-card.component.css',
 })
-export class CardComponent {
+export class SkillCardComponent {
   private readonly PATH_CHECK_ICON = 'assets/images/check.svg';
   private readonly PATH_UNCHECK_ICON = 'assets/images/uncheck.svg';
 
