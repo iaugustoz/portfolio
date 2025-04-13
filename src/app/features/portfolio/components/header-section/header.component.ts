@@ -1,6 +1,6 @@
 import { Component, WritableSignal, signal } from '@angular/core';
-import { MenuComponent } from '../../utils/menu/menu.component';
 import { CommonModule } from '@angular/common';
+import { MenuComponent } from '../../../../shared/components/menu/menu.component';
 
 @Component({
   selector: 'app-header',
