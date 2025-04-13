@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CardComponent } from '../../utils/card/card.component';
+import { CardComponent } from '../../../../shared/components/utils/card/card.component';
 
 @Component({
   selector: 'app-skills',

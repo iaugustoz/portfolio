@@ -1,0 +1,33 @@
+@tailwind components;
+
+@layer components {
+  .title {
+    @apply text-white text-3xl md:text-4xl 
+    font-bold select-none;
+  }
+
+  .sub-title {
+    @apply text-white text-lg md:text-xl
+    text-center max-w-72 md:max-w-max select-none;
+  }
+
+  .image {
+    @apply size-12 rounded self-start;
+  }
+
+  .university-name {
+    @apply text-white font-bold;
+  }
+
+  .educational-title {
+    @apply text-sm text-white;
+  }
+
+  .study-period {
+    @apply text-zinc-400 text-sm;
+  }
+
+  .description {
+    @apply text-white text-sm pt-6 indent-6;
+  }
+}
