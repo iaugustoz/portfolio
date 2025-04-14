@@ -1,0 +1,15 @@
+<div class="container-app flex flex-col items-center gap-y-5 my-10">
+  <div
+    *ngFor="let card of cardInfo"
+    class="card container-card"
+  >
+    <img [src]="card.image" alt="Logo da universidade" class="image" />
+    <div class="flex flex-col justify-center">
+      <h3 class="name">{{ card.name }}</h3>
+      <h4 class="title">{{ card.title }}</h4>
+      <p class="period">{{ card.period }}</p>
+
+      <p class="description">{{ card.description }}</p>
+    </div>
+  </div>
+</div>
