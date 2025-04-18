@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { IStack } from './interfaces/stack.interface';
 import { ICard } from './interfaces/card.interface';
@@ -6,7 +5,7 @@ import { ICard } from './interfaces/card.interface';
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [NgFor],
+  imports: [],
   templateUrl: './skill-card.component.html',
   styleUrl: './skill-card.component.css',
 })
@@ -58,6 +57,7 @@ export class SkillCardComponent {
 
   private readonly othersCard: IStack[] = [
     { technology: 'K8S', path: this.PATH_UNCHECK_ICON },
+    { technology: 'Dynatrace', path: this.PATH_CHECK_ICON },
   ];
 
   public readonly cards: ICard[] = [
