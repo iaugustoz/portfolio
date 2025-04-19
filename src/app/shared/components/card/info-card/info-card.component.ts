@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { IInfo } from './interfaces/info.interface';
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-info-card',
   standalone: true,
-  imports: [NgFor],
+  imports: [],
   templateUrl: './info-card.component.html',
   styleUrl: './info-card.component.css',
 })

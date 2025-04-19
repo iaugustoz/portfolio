@@ -1,11 +1,11 @@
-import { DOCUMENT, NgIf } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { privateDecrypt } from 'node:crypto';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [NgIf],
+  imports: [],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css',
 })
