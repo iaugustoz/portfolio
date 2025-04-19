@@ -1,0 +1,33 @@
+[
+  {
+    "image": "/assets/images/sulamerica.jpg",
+    "name": "SulAmérica",
+    "title": "Software Engineer Java (Intern)",
+    "period": "Nov. 2023 - the moment",
+    "description": "Adicionar descrição."
+  },
+
+  {
+    "image": "/assets/images/tcesp.jpg",
+    "name": "TCESP",
+    "title": "Software Engineer Front-End (Intern)",
+    "period": "Jun. 2022 - Sept. 2023",
+    "description": "Adicionar descrição."
+  },
+
+  {
+    "image": "/assets/images/fiap.jpg",
+    "name": "FIAP",
+    "title": "Tech Postgraduate, Software Architecture",
+    "period": "Fev. 2026 - Dec. 2026",
+    "description": "Pretendo começar esta pós graduação ano que vem."
+  },
+
+  {
+    "image": "/assets/images/unip.png",
+    "name": "Universidade Paulista",
+    "title": "Bachelor's Degree, Computer Science",
+    "period": "Fev. 2022 - Dec. 2025",
+    "description": "During the course, I developed skills in programming (Java, Python, NodeJs), agile project management and complex problem-solving. My final project involved creating an application to help nutritionists guide their patients using AI."
+  }
+]
