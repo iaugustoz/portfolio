@@ -1,0 +1,19 @@
+{
+  "experience": [
+    {
+      "image": "/assets/images/sulamerica.jpg",
+      "name": "SulAmérica",
+      "title": "Software Engineer Java (Intern)",
+      "period": "Nov. 2023 - the moment",
+      "description": "Adicionar descrição."
+    },
+
+    {
+      "image": "/assets/images/tcesp.jpeg",
+      "name": "TCESP",
+      "title": "Software Engineer Front-End (Intern)",
+      "period": "Jun. 2022 - Sept. 2023",
+      "description": "Adicionar descrição."
+    }
+  ]
+}
