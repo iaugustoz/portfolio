@@ -1,8 +1,10 @@
 <section class="container-app my-10">
-  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+  <div
+    class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
+  >
+    @for (card of cards; track $index) {
     <div
-      *ngFor="let card of cards"
-      class="bg-black rounded-xl py-10 px-6 w-full h-full hover:scale-95 hover:transition-transform hover:shadow-all"
+      class="bg-black rounded-xl py-10 px-4 w-full h-full hover:scale-95 hover:transition-transform hover:shadow-all"
     >
       <h3 class="card-title">
         {{ card.title }}
@@ -18,5 +20,6 @@
         </div>
       </div>
     </div>
+    }
   </div>
 </section>
