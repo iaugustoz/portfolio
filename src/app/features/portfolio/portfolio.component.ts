@@ -5,6 +5,7 @@ import { MainSectionComponent } from './components/main-section/main-section.com
 import { SkillsComponent } from './components/skills-section/skills.component';
 import { FormationComponent } from './components/formation-section/formation.component';
 import { SkillCardComponent } from '../../shared/components/card/skill-card/skill-card.component';
+import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -16,6 +17,7 @@ import { SkillCardComponent } from '../../shared/components/card/skill-card/skil
     SkillCardComponent,
     SkillsComponent,
     FormationComponent,
+    ExperienceSectionComponent,
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
