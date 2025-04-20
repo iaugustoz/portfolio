@@ -2,18 +2,18 @@
   "experience": [
     {
       "image": "/assets/images/sulamerica.jpg",
-      "name": "SulAmérica",
-      "title": "Software Engineer Java (Intern)",
+      "name": " Software Engineer Java",
+      "title": "SulAmérica",
       "period": "Nov. 2023 - the moment",
-      "description": "Adicionar descrição."
+      "description": "Atuação no Squad de Engenharia de Software, desenvolvendo e aprimorando microsserviços Java e Spring Boot, garantindo escalabilidade, segurança e performance."
     },
 
     {
       "image": "/assets/images/tcesp.jpeg",
-      "name": "TCESP",
-      "title": "Software Engineer Front-End (Intern)",
+      "name": "Software Engineer Front-End",
+      "title": "TCESP",
       "period": "Jun. 2022 - Sept. 2023",
-      "description": "Adicionar descrição."
+      "description": "Desenvolvimento de soluções de front-end com foco em usabilidade, performance e integração com back-end Java."
     }
   ]
 }
