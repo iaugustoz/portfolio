@@ -12,12 +12,14 @@
       <hr class="divisor" />
 
       <div class="grid grid-cols-2 gap-2 mt-4">
-        <div class="flex items-center gap-x-2" *ngFor="let tech of card.stack">
+        @for (tech of card.stack; track $index) {
+        <div class="flex items-center gap-x-2">
           <img [src]="tech.path" alt="" class="icon" />
           <p class="card-technology">
             {{ tech.technology }}
           </p>
         </div>
+        }
       </div>
     </div>
     }

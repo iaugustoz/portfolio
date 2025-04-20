@@ -6,5 +6,7 @@
     </p>
   </div>
 
-  <app-info-card></app-info-card>
+  @for(card of cardFormation; track card) {
+  <app-info-card [title]="card.title" [data]="card"></app-info-card>
+  }
 </section>
