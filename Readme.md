@@ -6,7 +6,7 @@
 
 ## 📜 **Description**
 
-Description in development...
+Bem-vindo(a) ao meu portfólio! Aqui você vai encontrar uma coleção dos meus projetos, experiências e habilidades nas áreas de desenvolvimento de software, design e tecnologia.
 
 ---
 
