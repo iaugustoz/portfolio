@@ -6,7 +6,8 @@ import { SkillsComponent } from './components/skills-section/skills.component';
 import { FormationComponent } from './components/formation-section/formation.component';
 import { SkillCardComponent } from '../../shared/components/card/skill-card/skill-card.component';
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
-import { ProjectsSectionComponent } from "./components/projects-section/projects-section.component";
+import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -19,8 +20,9 @@ import { ProjectsSectionComponent } from "./components/projects-section/projects
     SkillsComponent,
     FormationComponent,
     ExperienceSectionComponent,
-    ProjectsSectionComponent
-],
+    ProjectsSectionComponent,
+    ContactSectionComponent,
+  ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
 })
