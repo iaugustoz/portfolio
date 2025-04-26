@@ -2,7 +2,8 @@
 
 @layer components {
   .button {
-    @apply border border-neon-green/40 bg-neon-green/5 rounded-full
-    px-2 py-1 md:px-3 md:py-1 mt-2 text-xs active:scale-95;
+    @apply text-white text-xs border border-neon-green/40 
+    bg-neon-green/5 rounded-full px-2 py-1 md:px-3 md:py-1 
+    mt-2 active:scale-95 select-none;
   }
 }
