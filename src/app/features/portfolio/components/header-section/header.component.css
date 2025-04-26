@@ -18,6 +18,6 @@
     bg-transparent text-white border-[1px] border-neon-green 
     rounded-md active:shadow-all active:scale-95
     px-5 py-1 hidden md:flex hover:bg-neon-green
-    hover:text-black hover:transition-all; 
+    hover:text-black hover:transition-all select-none; 
   }
 }
