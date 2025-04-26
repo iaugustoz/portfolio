@@ -1,0 +1,44 @@
+<section class="container-app pb-5" data-aos="fade-left">
+  <div class="flex flex-col justify-center items-center">
+    <h2 class="title">Projects</h2>
+    <p class="sub-title mt-5">
+      Selected projects that demonstrate creativity and ...
+    </p>
+  </div>
+
+  <div class="flex justify-center mt-6">
+    <div class="grid grid-cols-[1.25fr_1fr] gap-x-10 container-style">
+      <div class="text-white">
+        <img
+          class="image"
+          src="/assets/images/projects/palmeiras-store-web.jpg"
+          alt="Projeto Palmeiras Store Web"
+        />
+      </div>
+
+      <div class="text-white">
+        <h3 class="project-title">Palmeiras Store</h3>
+        <p class="project-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          corrupti ipsum tenetur ut, mollitia minus sunt consectetur nihil totam
+          odit quasi neque suscipit consequuntur ad illo ab nesciunt repellendus
+          quibusdam!
+        </p>
+        <div class="pt-6">
+          <h2 class="project-technology">tecnologias</h2>
+
+          <div class="flex gap-x-2">
+            @for (item of technologies; track $index) {
+            <app-badge text="{{ item }}"></app-badge>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 text-white mt-8">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde odit iste quidem exercitationem ipsam laborum repellendus natus voluptatibus quos explicabo. Facilis autem deleniti voluptatum consequuntur amet quidem consectetur voluptates beatae.
+      </div>
+      
+    </div>
+  </div>
+</section>
