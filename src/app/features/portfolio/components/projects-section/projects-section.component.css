@@ -25,11 +25,11 @@
   }
 
   .project-description {
-    @apply text-zinc-400 indent-6 select-none;
+    @apply text-white/60 indent-6 select-none;
   }
 
   .project-technology {
-    @apply text-sm text-zinc-400 font-bold
+    @apply text-sm text-white/60 font-bold
     uppercase select-none;
   }
 }
