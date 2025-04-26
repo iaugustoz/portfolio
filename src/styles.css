@@ -6,7 +6,7 @@
 
 @layer base {
   .container-app {
-    @apply mx-auto max-w-[70%] sm:max-w-[70%] md:max-w-[80%] xl:max-w-[80%];
+    @apply mx-auto max-w-[80%] sm:max-w-[70%] md:max-w-[80%] xl:max-w-[80%];
   }
 
   .icon {
