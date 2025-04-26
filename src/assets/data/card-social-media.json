@@ -1,0 +1,26 @@
+{
+  "social-media": [
+    {
+      "title": "GitHub",
+      "username": "@iaugustoz",
+      "icon": "assets/images/icons/github.svg",
+      "alt": "Ícone do GitHub",
+      "link": "https://github.com/iaugustoz"
+    },
+
+    {
+      "title": "LinkedIn",
+      "username": "/in/igorbrz",
+      "icon": "assets/images/icons/linkedin.svg",
+      "alt": "Ícone do LinkedIn",
+      "link": "https://www.linkedin.com/in/igorbrz/"
+    },
+    {
+      "title": "Instagram",
+      "username": "@iaugusto__",
+      "icon": "assets/images/icons/instagram.svg",
+      "alt": "Ícone do Instagram",
+      "link": "https://www.instagram.com/iaugusto__"
+    }
+  ]
+}
