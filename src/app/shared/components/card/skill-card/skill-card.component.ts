@@ -10,8 +10,8 @@ import { ICard } from './interfaces/card.interface';
   styleUrl: './skill-card.component.css',
 })
 export class SkillCardComponent {
-  private readonly PATH_CHECK_ICON = 'assets/images/check.svg';
-  private readonly PATH_UNCHECK_ICON = 'assets/images/uncheck.svg';
+  private readonly PATH_CHECK_ICON = 'assets/images/icons/check.svg';
+  private readonly PATH_UNCHECK_ICON = 'assets/images/icons/uncheck.svg';
 
   private readonly frontendCard: IStack[] = [
     { technology: 'Angular', path: this.PATH_CHECK_ICON },
