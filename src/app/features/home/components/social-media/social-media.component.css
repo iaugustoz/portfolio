@@ -1,0 +1,16 @@
+@tailwind components;
+
+@layer components {
+  .social-media-card {
+    @apply flex items-center gap-x-4 md:gap-x-6 my-6 border 
+  border-white/5 shadow-[0_0_30px_rgba(0,0,0,0.2)] rounded-md p-4;
+  }
+
+  .social-media-title {
+    @apply text-white font-medium;
+  }
+
+  .social-media-description {
+    @apply text-sm text-white/60;
+  }
+}

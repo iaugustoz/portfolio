@@ -20,27 +20,7 @@
         <h4 class="contact-title">Connect with me</h4>
       </div>
 
-      @for (item of json; track $index) {
-      <a class="social-media-card" [href]="item.link" target="_blank">
-        <div>
-          <img class="size-8" [src]="item.icon" [alt]="item.alt" />
-        </div>
-
-        <div class="flex text-wrap items-center justify-between w-full">
-          <div class="flex flex-col">
-            <h5 class="social-media-title">{{ item.title }}</h5>
-            <p class="social-media-description">{{ item.username }}</p>
-          </div>
-          <div>
-            <img
-              class="size-4"
-              src="assets/images/icons/arrow-right.svg"
-              alt="ïcone de seta"
-            />
-          </div>
-        </div>
-      </a>
-      }
+      <app-social-media></app-social-media>
     </div>
   </div>
 </section>
