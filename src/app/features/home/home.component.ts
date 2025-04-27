@@ -10,7 +10,7 @@ import { ExperienceSectionComponent } from '../../core/layouts/experience-sectio
 import { ProjectsSectionComponent } from '../../core/layouts/projects-section/projects-section.component';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'app-home',
   standalone: true,
   imports: [
     HeaderComponent,
@@ -23,7 +23,7 @@ import { ProjectsSectionComponent } from '../../core/layouts/projects-section/pr
     ProjectsSectionComponent,
     ContactSectionComponent,
   ],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css',
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css',
 })
-export class PortfolioComponent {}
+export class HomeComponent {}
