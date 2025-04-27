@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import socialMediaJson from '../../../../../assets/data/card-social-media.json';
+import socialMediaJson from '../../../../assets/data/card-social-media.json';
 
 @Component({
   selector: 'app-contact-section',

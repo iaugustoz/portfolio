@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { InfoCardComponent } from '../../../../shared/components/card/info-card/info-card.component';
-import jsonData from '../../../../../assets/data/card-experience.json';
+import jsonData from '../../../../assets/data/card-experience.json';
+import { InfoCardComponent } from '../../../shared/components/card/info-card/info-card.component';
 
 @Component({
   selector: 'app-experience-section',
