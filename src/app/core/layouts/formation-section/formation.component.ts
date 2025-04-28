@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { InfoCardComponent } from '../../../../shared/components/card/info-card/info-card.component';
-import jsonData from '../../../../../assets/data/card-formation.json';
+import { InfoCardComponent } from '../../../shared/components/card/info-card/info-card.component';
+import jsonData from '../../../../assets/data/card-formation.json';
 
 @Component({
   selector: 'app-formation',
