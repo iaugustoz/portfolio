@@ -1,0 +1,71 @@
+<div class="form-container">
+  <div class="links-container">
+    <div class="flex items-center gap-x-4">
+      <img
+        class="link-icon"
+        src="assets/images/icons/stars.svg"
+        alt="Ícone de Link"
+      />
+      <h4 class="contact-title">Send a message</h4>
+    </div>
+
+    <form action="" method="post" class="flex flex-col gap-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+        <div class="flex flex-col">
+          <label for="name" class="form-label">Nome</label>
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            required
+            placeholder=""
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            required
+            placeholder=""
+          />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="flex flex-col">
+          <label for="cel" class="form-label">Cellphone</label>
+          <input
+            type="text"
+            id="cel"
+            class="form-input"
+            required
+            placeholder="(XX) XXXXX-XXXX"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" id="subject" class="form-input" required />
+        </div>
+      </div>
+
+      <div>
+        <label for="message" class="form-label">Message</label>
+        <textarea
+          id="message"
+          class="form-input resize-none h-40"
+          placeholder=""
+        ></textarea>
+      </div>
+
+      <button
+        class="bg-neon-green px-6 py-3 rounded-md active:scale-95"
+      >
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>

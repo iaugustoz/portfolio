@@ -1,0 +1,24 @@
+@tailwind components;
+
+@layer components {
+  .form-container {
+    @apply border border-white/5 shadow-[0_0_30px_rgba(0,0,0,0.2)] rounded-lg p-8 ;
+  }
+
+  .contact-title {
+    @apply text-white font-semibold text-lg md:text-xl;
+  }
+
+  .link-icon {
+    @apply size-8 bg-white/5 rounded-md p-2 cursor-pointer;
+  }
+
+  .form-label {
+    @apply text-white/60;
+  }
+
+  .form-input {
+    @apply px-4 py-3 w-full rounded-md bg-white/5 text-white 
+    focus:outline-none focus:ring-2 focus:ring-neon-green;
+  }
+}
