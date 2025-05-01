@@ -1,0 +1,24 @@
+{
+  "footer": [
+    {
+      "image": "assets/images/icons/github.svg",
+      "alt": "Ícone do GitHub",
+      "link": "https://github.com/iaugustoz"
+    },
+    {
+      "image": "assets/images/icons/linkedin.svg",
+      "alt": "Ícone do LinkedIn",
+      "link": "https://www.linkedin.com/in/igorbrz/"
+    },
+    {
+      "image": "assets/images/icons/mail.svg",
+      "alt": "Ícone do E-mail",
+      "link": "mailto:iaugustodeveloper@gmail.com"
+    },
+    {
+      "image": "assets/images/icons/instagram.svg",
+      "alt": "Ícone do Instagram",
+      "link": "https://www.instagram.com/iaugusto__/"
+    }
+  ]
+}
