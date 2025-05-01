@@ -8,6 +8,7 @@ import { SkillsComponent } from '../../core/layouts/skills-section/skills.compon
 import { FormationComponent } from '../../core/layouts/formation-section/formation.component';
 import { ExperienceSectionComponent } from '../../core/layouts/experience-section/experience-section.component';
 import { ProjectsSectionComponent } from '../../core/layouts/projects-section/projects-section.component';
+import { FooterComponent } from "../../core/components/footer/footer.component";
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,8 @@ import { ProjectsSectionComponent } from '../../core/layouts/projects-section/pr
     ExperienceSectionComponent,
     ProjectsSectionComponent,
     ContactSectionComponent,
-  ],
+    FooterComponent
+],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
