@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+  .footer {
+    @apply bg-black select-none;
+  }
+
+  .footer-container {
+    @apply mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8;
+  }
+
+  .footer-brand {
+    @apply self-center text-2xl font-semibold whitespace-nowrap text-neon-green;
+  }
+
+  .footer-links {
+    @apply grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3;
+  }
+
+  .footer-title {
+    @apply mb-6 text-sm font-semibold uppercase text-white;
+  }
+
+  .footer-list {
+    @apply text-gray-400 font-medium;
+  }
+
+  .footer-copyright {
+    @apply text-sm sm:text-center text-gray-400;
+  }
+}

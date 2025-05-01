@@ -32,9 +32,3 @@ Bem-vindo(a) ao meu portfólio! Aqui você vai encontrar uma coleção dos meus 
 - Igor Augusto
 - 📧 E-mail: iaugustodeveloper@gmail.com
 - [Instagram](https://www.instagram.com/iaugusto__/) | [Portfólio](https://iaugusto.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/igorbrz/)
-
----
-
-## ⚠️ Aviso Importante
-
-Este projeto ainda está em desenvolvimento, portanto, alguns recursos podem estar incompletos ou sujeitos a alterações. Se encontrar algum bug, não hesite em abrir um chamado!
