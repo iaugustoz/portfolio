@@ -12,7 +12,7 @@ Bem-vindo(a) ao meu portfólio! Aqui você vai encontrar uma coleção dos meus 
 
 ## 🚀 **Status do Projeto**
 
-⚙️ Projeto em desenvolvimento...
+✅ Projeto concluído.
 
 ---
 
