@@ -29,13 +29,21 @@ module.exports = {
           '50%': {
             transform: 'rotate(20deg)'
           }
-      
-        }
+        },
+        up: {
+          '0%': {
+            transform: "translateY(0px)"
+          },
+          "100%": {
+            transform: "translateY(-5px)"
+          }
+        },
       },
       animation: {
         "move-right": "move 1s forwards",
         "move-left": "move 1s reverse",
-        "shake": "shake 1s"
+        "shake": "shake 1s",
+        "up":"up 1s forwards"
       },
       boxShadow: {
         'all': '0 0 20px 5px rgba(57, 255, 20, 0.5)'
