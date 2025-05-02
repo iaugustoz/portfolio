@@ -2,8 +2,9 @@
 
 @layer components {
   .button {
-    @apply text-white text-xs border border-neon-green/40 
+    @apply text-white text-xs border border-neon-green/20 
     bg-neon-green/5 rounded-full px-2 py-1 md:px-3 md:py-1 
-    mt-2 active:scale-95 select-none;
+    mt-2 active:scale-95 select-none hover:text-neon-green
+    hover:border-neon-green/50 hover:animate-up;
   }
 }
