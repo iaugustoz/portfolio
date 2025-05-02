@@ -18,7 +18,7 @@
             id="name"
             class="form-input"
             required
-            placeholder=""
+            placeholder="Enter Full Name"
           />
         </div>
 
@@ -29,26 +29,26 @@
             id="email"
             class="form-input"
             required
-            placeholder=""
+            placeholder="Enter Email Address"
           />
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="flex flex-col">
-          <label for="cel" class="form-label">Cellphone</label>
+          <label for="cel" class="form-label">Phone Number</label>
           <input
             type="text"
             id="cel"
             class="form-input"
             required
-            placeholder="(XX) XXXXX-XXXX"
+            placeholder="Your Phone Number"
           />
         </div>
 
         <div class="flex flex-col">
           <label for="subject" class="form-label">Subject</label>
-          <input type="text" id="subject" class="form-input" required />
+          <input type="text" id="subject" class="form-input" required placeholder="Your Subject"/>
         </div>
       </div>
 
@@ -61,10 +61,9 @@
         ></textarea>
       </div>
 
-      <button
-        class="bg-neon-green px-6 py-3 rounded-md active:scale-95"
-      >
-        Enviar
+      <button class="form-submit-button">
+        <img src="assets/images/icons/send.svg" class="size-4" />
+        Enviar Mensagem
       </button>
     </form>
   </div>

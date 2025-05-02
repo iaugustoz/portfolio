@@ -1,6 +1,11 @@
 @for (item of json; track $index) {
-<a class="social-media-card mt-6" [href]="item.link" target="_blank">
-  <div>
+<a
+  class="social-media-card mt-6 hover:animate-move-right"
+  [href]="item.link"
+  target="_blank"
+  id="social-media"
+>
+  <div class="hover:relative hover:bg-neon-green/20 hover:rounded-full p-2 hover:animate-shake">
     <img class="size-8" [src]="item.icon" [alt]="item.alt" />
   </div>
 

@@ -2,7 +2,7 @@
 
 @layer components {
   .form-container {
-    @apply border border-white/5 shadow-[0_0_30px_rgba(0,0,0,0.2)] rounded-lg p-8 ;
+    @apply border border-white/5 shadow-[0_0_30px_rgba(0,0,0,0.2)] rounded-lg p-8;
   }
 
   .contact-title {
@@ -10,7 +10,7 @@
   }
 
   .link-icon {
-    @apply size-8 bg-white/5 rounded-md p-2 cursor-pointer;
+    @apply size-8 bg-white/5 rounded-md p-2 hover:rotate-12 hover:transition-all;
   }
 
   .form-label {
@@ -19,6 +19,11 @@
 
   .form-input {
     @apply px-4 py-3 w-full rounded-md bg-white/5 text-white 
-    focus:outline-none focus:ring-2 focus:ring-neon-green;
+    focus:outline-none focus:ring-2 focus:ring-neon-green border border-white/10;
+  }
+
+  .form-submit-button {
+    @apply flex items-center gap-x-1 justify-center w-full bg-neon-green px-6 py-3  
+    rounded-md active:scale-95 font-medium;
   }
 }

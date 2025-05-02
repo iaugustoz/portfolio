@@ -12,7 +12,7 @@ Bem-vindo(a) ao meu portfólio! Aqui você vai encontrar uma coleção dos meus 
 
 ## 🚀 **Status do Projeto**
 
-⚙️ Projeto em desenvolvimento...
+✅ Projeto concluído.
 
 ---
 
@@ -22,7 +22,7 @@ Bem-vindo(a) ao meu portfólio! Aqui você vai encontrar uma coleção dos meus 
 
 ## 📦 **Dependências**
 
-- Tailwind CSS (v3.4.15)
+- Tailwind CSS (v4.1.5)
 - Animated On Scroll Library (V2.3.4) - biblioteca externa focada em animações de transições de elementos
 
 ---

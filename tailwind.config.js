@@ -1,3 +1,5 @@
+const { transform } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
@@ -11,6 +13,30 @@ module.exports = {
       '3xl': '1785px'
     },
     extend: {
+      keyframes: {
+        move: {
+          '0%': {
+            transform: "translate(0px)"
+          },
+          "100%": {
+            transform: "translate(20px)"
+          }
+        },
+        shake:{
+          '0%, 100%': {
+            transform: 'rotate(-20deg)'
+          },
+          '50%': {
+            transform: 'rotate(20deg)'
+          }
+      
+        }
+      },
+      animation: {
+        "move-right": "move 1s forwards",
+        "move-left": "move 1s reverse",
+        "shake": "shake 1s"
+      },
       boxShadow: {
         'all': '0 0 20px 5px rgba(57, 255, 20, 0.5)'
       },
