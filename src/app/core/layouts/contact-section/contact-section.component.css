@@ -20,6 +20,7 @@
   }
 
   .link-icon {
-    @apply size-8 bg-white/5 rounded-md p-2 cursor-pointer;
+    @apply size-8 bg-white/5 rounded-md p-2 hover:rotate-12
+    hover:transition-all;
   }
 }
