@@ -1,7 +1,7 @@
 {
   "formation": [
     {
-      "image": "/assets/images/fiap.jpg",
+      "image": "/assets/images/career/fiap.jpg",
       "name": "FIAP",
       "title": "Tech Postgraduate, Software Architecture",
       "period": "Fev. 2026 - Dec. 2026",
@@ -9,7 +9,7 @@
     },
 
     {
-      "image": "/assets/images/unip.png",
+      "image": "/assets/images/career/unip.png",
       "name": "Universidade Paulista",
       "title": "Bachelor's Degree, Computer Science",
       "period": "Fev. 2022 - Dec. 2025",

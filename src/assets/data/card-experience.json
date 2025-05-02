@@ -1,7 +1,7 @@
 {
   "experience": [
     {
-      "image": "/assets/images/sulamerica.jpg",
+      "image": "/assets/images/career/sulamerica.jpg",
       "name": " Software Engineer Java",
       "title": "SulAmérica",
       "period": "Nov. 2023 - the moment",
@@ -9,7 +9,7 @@
     },
 
     {
-      "image": "/assets/images/tcesp.jpeg",
+      "image": "/assets/images/career/tcesp.jpeg",
       "name": "Software Engineer Front-End",
       "title": "TCESP",
       "period": "Jun. 2022 - Sept. 2023",
