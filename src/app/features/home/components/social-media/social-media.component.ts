@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import socialMediaJson from '../../../../../assets/data/card-social-media.json';
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
+import { moveAnimation } from '../../../../core/animations/move.animation';
 
 @Component({
   selector: 'app-social-media',
@@ -14,13 +8,7 @@ import {
   imports: [],
   templateUrl: './social-media.component.html',
   styleUrl: './social-media.component.css',
-  animations: [
-    trigger('move', [
-      state('move-left', style({ transform: 'translate(0px)' })),
-      state('move-right', style({ transform: 'translate(20px)' })),
-      transition('move-left <=> move-right', animate('0.4s')),
-    ]),
-  ],
+  animations: [moveAnimation],
 })
 export class SocialMediaComponent {
   public json: any[] = socialMediaJson['social-media'];
