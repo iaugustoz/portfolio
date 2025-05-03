@@ -14,14 +14,6 @@ module.exports = {
     },
     extend: {
       keyframes: {
-        move: {
-          '0%': {
-            transform: "translate(0px)"
-          },
-          "100%": {
-            transform: "translate(20px)"
-          }
-        },
         shake:{
           '0%, 100%': {
             transform: 'rotate(-20deg)'
@@ -40,9 +32,9 @@ module.exports = {
         },
       },
       animation: {
-        "move-right": "move 1s forwards",
-        "move-left": "move 1s reverse",
-        "shake": "shake 1s",
+        "move-right": "move 0.8s forwards",
+        "move-left": "move 0.8s reverse",
+        "shake": "shake .7s",
         "up":"up 1s forwards"
       },
       boxShadow: {

@@ -10,7 +10,8 @@
   }
 
   .footer-brand {
-    @apply self-center text-2xl font-semibold whitespace-nowrap text-neon-green;
+    @apply self-center text-2xl font-semibold whitespace-nowrap
+    text-neon-green animate-pulse;
   }
 
   .footer-links {
@@ -18,11 +19,17 @@
   }
 
   .footer-title {
-    @apply mb-6 text-sm font-semibold uppercase text-white;
+    @apply mb-6 text-sm font-semibold uppercase
+    text-neon-green/80;
   }
 
   .footer-list {
     @apply text-gray-400 font-medium;
+  }
+
+  .footer-item-list {
+    @apply mb-4 hover:text-neon-green/80 flex 
+    items-center gap-1;
   }
 
   .footer-copyright {

@@ -9,18 +9,16 @@
         <div>
           <h2 class="footer-title">Navegation</h2>
           <ul class="footer-list">
-            <li class="mb-4">
-              <a href="">Skills</a>
+            @for (item of jsonFooterSections; track $index) {
+            <li class="footer-item-list">
+              <img
+                [src]="item.pathImage"
+                [alt]="item.altImage"
+                class="size-5"
+              />
+              <a href="">{{ item.text }}</a>
             </li>
-            <li class="mb-4">
-              <a href="">Experience</a>
-            </li>
-            <li class="mb-4">
-              <a href="">Formation</a>
-            </li>
-            <li class="mb-4">
-              <a href="">Projects</a>
-            </li>
+            }
           </ul>
         </div>
       </div>
@@ -36,9 +34,13 @@
       </span>
 
       <div class="flex items-center mt-4 sm:justify-center sm:mt-0">
-        @for (item of json; track $index) {
+        @for (item of jsonSocialMedia; track $index) {
         <a [href]="item.link" class="ms-5" target="_blank">
-          <img [src]="item.image" class="w-5 h-5" [alt]="item.alt" />
+          <img
+            [src]="item.pathImage"
+            class="w-5 h-5 hover:animate-shake"
+            [alt]="item.altImage"
+          />
         </a>
         }
       </div>
