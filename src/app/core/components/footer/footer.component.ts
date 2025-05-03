@@ -9,5 +9,6 @@ import footerJson from '../../../../assets/data/footer.json';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  public json: any[] = footerJson['footer'];
+  public jsonSocialMedia: any[] = footerJson['footer-social-media'];
+  public jsonFooterSections: any[] = footerJson['footer-sections'];
 }

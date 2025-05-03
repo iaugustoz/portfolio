@@ -1,23 +1,45 @@
 {
-  "footer": [
+  "footer-sections": [
     {
-      "image": "assets/images/icons/github.svg",
-      "alt": "Ícone do GitHub",
+      "pathImage": "assets/images/icons/footer/user.svg",
+      "altImage": "Ícone de perfil de usuário",
+      "text": "Skills"
+    },
+    {
+      "pathImage": "assets/images/icons/footer/briefcase.svg",
+      "altImage": "Ícone de perfil de usuário",
+      "text": "Experience"
+    },
+    {
+      "pathImage": "assets/images/icons/footer/book.svg",
+      "altImage": "Ícone de perfil de usuário",
+      "text": "Formation"
+    },
+    {
+      "pathImage": "assets/images/icons/footer/code.svg",
+      "altImage": "Ícone de perfil de usuário",
+      "text": "Projects"
+    }
+  ],
+  "footer-social-media": [
+    {
+      "pathImage": "assets/images/icons/github.svg",
+      "altImage": "Ícone do GitHub",
       "link": "https://github.com/iaugustoz"
     },
     {
-      "image": "assets/images/icons/linkedin.svg",
-      "alt": "Ícone do LinkedIn",
+      "pathImage": "assets/images/icons/linkedin.svg",
+      "altImage": "Ícone do LinkedIn",
       "link": "https://www.linkedin.com/in/igorbrz/"
     },
     {
-      "image": "assets/images/icons/mail.svg",
-      "alt": "Ícone do E-mail",
+      "pathImage": "assets/images/icons/mail.svg",
+      "altImage": "Ícone do E-mail",
       "link": "mailto:iaugustodeveloper@gmail.com"
     },
     {
-      "image": "assets/images/icons/instagram.svg",
-      "alt": "Ícone do Instagram",
+      "pathImage": "assets/images/icons/instagram.svg",
+      "altImage": "Ícone do Instagram",
       "link": "https://www.instagram.com/iaugusto__/"
     }
   ]
