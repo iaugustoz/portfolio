@@ -1,0 +1,45 @@
+@tailwind components;
+
+@layer components {
+  .container-style {
+    @apply h-full w-full md:w-full lg:w-11/12 xl:w-10/12 
+    2xl:w-9/12 p-6 md:pr-2 rounded-md bg-black;
+  }
+
+  .projects-image {
+    @apply w-full h-full object-cover select-none;
+  }
+
+  .project-card-title {
+    @apply text-white font-bold text-2xl select-none;
+  }
+
+  .project-card-description {
+    @apply text-white/60 indent-6 select-none;
+  }
+
+  .project-card-technology {
+    @apply text-sm text-white/60 font-bold
+    uppercase select-none;
+  }
+
+  .projects-details-button-container {
+    @apply flex justify-start items-center gap-x-4;
+  }
+
+  .projects-details-button {
+    @apply font-medium text-xs md:text-sm bg-neon-green rounded-md
+    px-3 py-1.5 md:px-4 md:py-2 active:scale-95;
+  }
+
+  .project-demo-button-container {
+    @apply flex items-center gap-2;
+  }
+
+  .projects-demo-button {
+    @apply border border-white/20 rounded-md 
+    bg-white/10 text-white px-4 py-1.5 md:py-2 
+    hover:bg-white/20 text-xs md:text-sm 
+    transition-colors active:scale-95;
+  }
+}
