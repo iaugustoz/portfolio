@@ -11,11 +11,11 @@
           <ul class="footer-list">
             @for (item of jsonFooterSections; track $index) {
             <li class="footer-item-list">
-              <a href="" class="flex items-center gap-1">
+              <a [href]="item.link" class="flex items-center gap-1">
                 <img
                   [src]="item.pathImage"
                   [alt]="item.altImage"
-                  class="size-5"
+                  class="size-5 hover:animate-shake"
                 />{{ item.text }}</a
               >
             </li>

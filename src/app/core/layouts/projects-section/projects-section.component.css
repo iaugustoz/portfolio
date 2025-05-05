@@ -1,35 +1,13 @@
 @tailwind components;
 
 @layer components {
-  .title {
+  .projects-title {
     @apply text-black text-3xl md:text-4xl 
     font-bold select-none mt-10;
   }
 
-  .sub-title {
+  .projects-sub-title {
     @apply text-lg md:text-xl text-center
     max-w-72 md:max-w-max select-none mt-5;
-  }
-
-  .container-style {
-    @apply w-full md:w-full lg:w-11/12 xl:w-10/12 
-    2xl:w-9/12 p-6 md:pr-2 rounded-md bg-black;
-  }
-
-  .image {
-    @apply rounded-md w-full h-full object-cover select-none;
-  }
-
-  .project-title {
-    @apply text-white font-bold text-2xl select-none;
-  }
-
-  .project-description {
-    @apply text-white/60 indent-6 select-none;
-  }
-
-  .project-technology {
-    @apply text-sm text-white/60 font-bold
-    uppercase select-none;
   }
 }
