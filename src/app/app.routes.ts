@@ -1,9 +1,19 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './features/home/home.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    title: "Igor's Portfolio",
+    loadComponent: () => import('./features/home/home.component'),
+  },
+  {
+    path: 'projects/:id',
+    title: "Igor's Projects",
+    loadComponent: () => import('./features/projects/projects.component'),
+  },
+  {
+    path: '**',
+    title: 'Página não encontrada',
+    loadComponent: () => import('./features/error/error.component'),
   },
 ];

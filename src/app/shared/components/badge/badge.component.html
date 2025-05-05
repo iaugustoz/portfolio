@@ -1,1 +1,8 @@
-<button class="button">{{ text }}</button>
+<button
+  [@up]="isActive ? 'up' : 'down'"
+  (mouseenter)="setActive(true)"
+  (mouseleave)="setActive(false)"
+  class="button"
+>
+  {{ text }}
+</button>

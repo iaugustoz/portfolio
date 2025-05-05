@@ -1,19 +1,14 @@
 import { Component, WritableSignal, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from '../../../shared/components/menu/menu.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, MenuComponent],
+  imports: [CommonModule, MenuComponent, RouterLink],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'], // Corrigido: styleUrls no plural
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  public image: string = 'logo.jpg';
-  public selectedLanguage: WritableSignal<string> = signal('pt');
-
-  public setLanguage(language: string): void {
-    this.selectedLanguage.set(language);
-  }
 }
