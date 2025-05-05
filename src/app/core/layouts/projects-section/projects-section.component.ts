@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { BadgeComponent } from '../../../shared/components/badge/badge.component';
+import { ProjectCardComponent } from '../../../shared/components/card/project-card/project-card.component';
 
 @Component({
   selector: 'app-projects-section',
   standalone: true,
-  imports: [BadgeComponent],
+  imports: [ProjectCardComponent],
   templateUrl: './projects-section.component.html',
   styleUrl: './projects-section.component.css',
 })
-export class ProjectsSectionComponent {
-  public technologies: string[] = ['Java', 'Spring Boot', 'Angular'];
-}
+export class ProjectsSectionComponent {}

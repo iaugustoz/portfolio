@@ -28,8 +28,7 @@
   }
 
   .footer-item-list {
-    @apply mb-4 hover:text-neon-green/80 flex 
-    items-center gap-1;
+    @apply mb-4 hover:text-neon-green/80;
   }
 
   .footer-copyright {

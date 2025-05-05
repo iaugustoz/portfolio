@@ -3,22 +3,26 @@
     {
       "pathImage": "assets/images/icons/footer/user.svg",
       "altImage": "Ícone de perfil de usuário",
-      "text": "Skills"
+      "text": "Skills",
+      "link": "#skills"
     },
     {
       "pathImage": "assets/images/icons/footer/briefcase.svg",
       "altImage": "Ícone de perfil de usuário",
-      "text": "Experience"
+      "text": "Experience",
+      "link": "#experience"
     },
     {
       "pathImage": "assets/images/icons/footer/book.svg",
       "altImage": "Ícone de perfil de usuário",
-      "text": "Formation"
+      "text": "Formation",
+      "link": "#formation"
     },
     {
       "pathImage": "assets/images/icons/footer/code.svg",
       "altImage": "Ícone de perfil de usuário",
-      "text": "Projects"
+      "text": "Projects",
+      "link": "#projects"
     }
   ],
   "footer-social-media": [
