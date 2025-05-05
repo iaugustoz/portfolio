@@ -6,11 +6,21 @@
 
   @if (isMenuOpen) {
   <ul class="menu-dropdown">
-    <li class="items-menu">Skills</li>
-    <li class="items-menu">Experience</li>
-    <li class="items-menu">Formation</li>
-    <li class="items-menu">Projects</li>
-    <li class="contact-menu-button">Contact me</li>
+    <li class="items-menu">
+      <a href="#skills" (click)="toggleMenu()">Skills</a>
+    </li>
+    <li class="items-menu">
+      <a href="#experience" (click)="toggleMenu()">Experience</a>
+    </li>
+    <li class="items-menu">
+      <a href="#formation" (click)="toggleMenu()">Formation</a>
+    </li>
+    <li class="items-menu">
+      <a href="#projects" (click)="toggleMenu()">Projects</a>
+    </li>
+    <li class="contact-menu-button">
+      <a href="#contact" (click)="toggleMenu()">Contact me</a>
+    </li>
   </ul>
   }
 </div>
