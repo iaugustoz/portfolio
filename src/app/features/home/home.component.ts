@@ -8,7 +8,8 @@ import { SkillsComponent } from '../../core/layouts/skills-section/skills.compon
 import { FormationComponent } from '../../core/layouts/formation-section/formation.component';
 import { ExperienceSectionComponent } from '../../core/layouts/experience-section/experience-section.component';
 import { ProjectsSectionComponent } from '../../core/layouts/projects-section/projects-section.component';
-import { FooterComponent } from "../../core/components/footer/footer.component";
+import { FooterComponent } from '../../core/components/footer/footer.component';
+import { elementAt } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -23,9 +24,9 @@ import { FooterComponent } from "../../core/components/footer/footer.component";
     ExperienceSectionComponent,
     ProjectsSectionComponent,
     ContactSectionComponent,
-    FooterComponent
-],
+    FooterComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export default class HomeComponent {}
