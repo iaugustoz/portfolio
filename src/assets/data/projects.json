@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "title": "Palmeiras Store",
+      "description": "This project was born from my passion for Palmeiras. Every detail of this e-commerce was meticulously thought out to honor the Palmeiras legacy and symbolize the pride of being a Palmeiras fan.",
+      "pathImage": "assets/images/projects/palmeiras-store-web.jpg",
+      "technologies": ["Java", "Spring", "Angular"],
+      "demoLink": "https://iaugusto-palmeiras-store.vercel.app/"
+    },
+    {
+      "title": "Cooming soon",
+      "description": "Project in development...",
+      "pathImage": "assets/images/projects/2.png",
+      "technologies": [],
+      "demoLink": ""
+    }
+  ]
+}
