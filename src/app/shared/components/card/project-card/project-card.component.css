@@ -7,7 +7,7 @@
   }
 
   .projects-image {
-    @apply w-full h-full object-cover select-none;
+    @apply w-full h-[260px] object-cover select-none;
   }
 
   .project-card-title {

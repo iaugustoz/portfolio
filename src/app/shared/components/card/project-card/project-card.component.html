@@ -5,25 +5,22 @@
     <div class="w-full h-full md:w-full md:h-full rounded-md relative">
       <img
         class="projects-image"
-        src="assets/images/projects/palmeiras-store-web.jpg"
-        alt="Projeto Palmeiras Store Web"
+        [src]="data[selectedIndex].pathImage"
+        [alt]="data[selectedIndex].title"
       />
     </div>
 
     <div>
-      <h3 class="project-card-title">Palmeiras Store</h3>
+      <h3 class="project-card-title">{{ data[selectedIndex].title }}</h3>
       <p class="project-card-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti
-        ipsum tenetur ut, mollitia minus sunt consectetur nihil totam odit quasi
-        neque suscipit consequuntur ad illo ab nesciunt repellendus quibusdam!
+        {{ data[selectedIndex].description }}
       </p>
 
       <div class="pt-6">
         <h2 class="project-card-technology">technologies</h2>
-
-        <div class="flex gap-x-2">
-          @for (item of technologies; track $index) {
-          <app-badge text="{{ item }}"></app-badge>
+        <div class="flex gap-x-2 flex-wrap">
+          @for (tech of data[selectedIndex].technologies; track $index) {
+          <app-badge [text]="tech"></app-badge>
           }
         </div>
       </div>
@@ -31,7 +28,7 @@
       <div class="flex gap-2 md:gap-4 pt-6 md:pt-10">
         <a
           class="projects-details-button-container projects-details-button"
-          [routerLink]=""
+          [routerLink]="''"
         >
           See more
           <img
@@ -42,34 +39,33 @@
         </a>
         <a
           class="projects-demo-button project-demo-button-container"
-          routerLink=""
+          [href]="data[selectedIndex].demoLink"
+          target="_blank"
         >
           <img
             src="assets/images/icons/open.svg"
             alt="Ícone para abrir link"
             class="size-4"
-          />Demo
+          />
+          Demo
         </a>
       </div>
     </div>
 
+    <!-- Galeria com miniaturas -->
     <div class="md:col-span-2">
-      <div class="flex flex-row flex-wrap gap-2 md:gap-4">
-        <button>
+      <div class="flex flex-wrap gap-2 md:gap-4">
+        @for (item of data; track $index) {
+        <button (click)="selectProject($index)">
           <img
-            class="aspect-video h-14 md:h-24 lg:h-32 rounded-md object-cover"
-            src="/assets/images/projects/palmeiras-store-web.jpg"
-            alt="Projeto Palmeiras Store Web"
+            class="aspect-video h-14 md:h-24 lg:h-32 rounded-md object-cover border-2"
+            [class.border-green-500]="selectedIndex === $index"
+            [class.border-transparent]="selectedIndex !== $index"
+            [src]="item.pathImage"
+            [alt]="item.title"
           />
         </button>
-
-        <button>
-          <img
-            class="aspect-video h-14 md:h-24 lg:h-32 rounded-md object-cover"
-            src="/assets/images/projects/palmeiras-store-web.jpg"
-            alt="Projeto Palmeiras Store Web"
-          />
-        </button>
+        }
       </div>
     </div>
   </div>
